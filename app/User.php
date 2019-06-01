@@ -30,6 +30,15 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
  * @method static \Illuminate\Database\Eloquent\Builder|\App\User wherePassword($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\User whereRememberToken($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\User whereUpdatedAt($value)
+ * @property int|null $role_id
+ * @property string|null $avatar
+ * @property string|null $settings
+ * @property mixed $locale
+ * @property-read \TCG\Voyager\Models\Role|null $role
+ * @property-read \Illuminate\Database\Eloquent\Collection|\TCG\Voyager\Models\Role[] $roles
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\User whereAvatar($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\User whereRoleId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\User whereSettings($value)
  */
 class User extends \TCG\Voyager\Models\User
 {
