@@ -78,7 +78,7 @@
                         
                         <div class="offer__button-wrap">
                             <a href="{{ $model->link }}" target="_blank" class="offer__button">
-                                ПОЛУЧИТЬ ДЕНЬГИ
+                                {{ setting('site.btn_label') }}
                             </a>
                         </div>
                     </div>
