@@ -29,7 +29,7 @@
             @foreach($models as $model)
                 <div class="col col-lg-3 col-md-4 col-sm-6">
                     <div class="offer">
-                        <a href="{{ $model->link }}" target="_blank">
+                        <a href="{{ $model->link_to_site }}" target="_blank">
                             <div style="background-image:url({{ Voyager::image($model->logo) }})" class="offer__logo"></div>
                         </a>
                         <table class="offer__table">
