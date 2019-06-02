@@ -9,7 +9,7 @@
                 <div class="row">
                     <div class="col-md-3">
                         <a href="#">
-                            <img src="{{ setting('header.header_logo') }}" alt="" class="img-responsive header__logotype">
+                            <img src="{{ Voyager::image(setting('header.header_logo')) }}" alt="" class="img-responsive header__logotype">
                         </a>
                     </div>
                     <div class="col-md-9">

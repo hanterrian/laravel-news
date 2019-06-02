@@ -7,7 +7,7 @@
     <title>@yield('title')</title>
     <meta name="description" content="{{ setting('site.description') }}">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}"/>
-    <link rel="shortcut icon" type="image/x-icon" href="{{ setting('site.logo') }}"/>
+    <link rel="shortcut icon" type="image/x-icon" href="{{ Voyager::image(setting('site.logo')) }}"/>
 
     <?= setting('analytics.after_header') ?>
 </head>
