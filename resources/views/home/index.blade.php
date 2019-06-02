@@ -34,30 +34,48 @@
                         </a>
                         <table class="offer__table">
                             <tbody>
-                            <tr>
-                                <td class="offer__table-td--left">Сумма</td>
-                                <td class="offer__table-td--right"> {{ $model->sum }} грн</td>
-                            </tr>
-                            <tr>
-                                <td class="offer__table-td--left">Ставка</td>
-                                <td class="offer__table-td--right">от {{ $model->rate }}% в день</td>
-                            </tr>
-                            <tr>
-                                <td class="offer__table-td--left">Срок</td>
-                                <td class="offer__table-td--right"> от
-                                    <span> {{ $model->term_from }}</span>
-                                    до
-                                    <span> {{ $model->term_to }}</span>
-                                    дней
-                                </td>
-                            </tr>
+                            @if($model->sum)
+                                <tr>
+                                    <td class="offer__table-td--left">Сумма</td>
+                                    <td class="offer__table-td--right"> {{ $model->sum }} грн</td>
+                                </tr>
+                            @endif
+
+                            @if($model->rate)
+                                <tr>
+                                    <td class="offer__table-td--left">Ставка</td>
+                                    <td class="offer__table-td--right">от {{ $model->rate }}% в день</td>
+                                </tr>
+                            @endif
+
+                            @if($model->term_from || $model->term_to)
+                                <tr>
+                                    <td class="offer__table-td--left">Срок</td>
+                                    <td class="offer__table-td--right">
+                                        @if($model->term_from)
+                                            от
+                                            <span> {{ $model->term_from }}</span>
+                                        @endif
+
+                                        @if($model->term_to)
+                                            до
+                                            <span> {{ $model->term_to }}</span>
+                                        @endif
+                                        дней
+                                    </td>
+                                </tr>
+                            @endif
                             </tbody>
                         </table>
-                        <div class="offer__hit-wrap">
-                            @foreach(explode('|', $model->description) as $description)
-                                <p class="offer__hit">{{ $description }}</p>
-                            @endforeach
-                        </div>
+
+                        @if($model->description)
+                            <div class="offer__hit-wrap">
+                                @foreach(explode('|', $model->description) as $description)
+                                    <p class="offer__hit">{{ $description }}</p>
+                                @endforeach
+                            </div>
+                        @endif
+                        
                         <div class="offer__button-wrap">
                             <a href="{{ $model->link }}" target="_blank" class="offer__button">
                                 ПОЛУЧИТЬ ДЕНЬГИ
