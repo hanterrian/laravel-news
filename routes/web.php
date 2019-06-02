@@ -16,4 +16,10 @@ Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
 
-Route::get('/', 'HomeController@index');
+Route::group(['domain' => 'lnews.locale'], function () {
+    Route::get('/', 'HomeController@index');
+});
+
+Route::group(['domain' => 'zaim.cijworld.com'], function () {
+    Route::get('/', 'HomeController@index');
+});
