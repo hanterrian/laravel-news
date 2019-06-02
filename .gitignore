@@ -12,3 +12,4 @@ yarn-error.log
 .idea
 /storage/*.index
 /storage/*.index-*
+/public/sitemap.xml
