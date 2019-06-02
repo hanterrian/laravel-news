@@ -70,6 +70,6 @@
     </section>
 
     <section class="agreement">
-        {{ setting('site.agreement') }}
+        <?= setting('site.agreement') ?>
     </section>
 @endsection
