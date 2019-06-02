@@ -8,6 +8,8 @@
     <meta name="description" content="{{ setting('site.description') }}">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}"/>
     <link rel="shortcut icon" type="image/x-icon" href="{{ setting('site.logo') }}"/>
+
+    <?= setting('analytics.after_header') ?>
 </head>
 <body>
 @yield('header')
@@ -17,5 +19,6 @@
 </div>
 
 <script src="{{ asset('js/app.js') }}"></script>
+<?= setting('analytics.after_body') ?>
 </body>
 </html>
