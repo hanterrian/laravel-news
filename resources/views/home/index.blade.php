@@ -9,12 +9,12 @@
                 <div class="row">
                     <div class="col-md-3">
                         <a href="#">
-                            <img src="{{ asset('img/logotype.png') }}" alt="" class="img-responsive header__logotype">
+                            <img src="{{ setting('header.header_logo') }}" alt="" class="img-responsive header__logotype">
                         </a>
                     </div>
                     <div class="col-md-9">
-                        <h1 class="header__title">СРОЧНЫЕ ЗАЙМЫ НА КАРТУ И ОНЛАЙН КРЕДИТЫ</h1>
-                        <h1 class="header__desc">Список с высоким % одобрения при любой истории заемщика!</h1>
+                        <h1 class="header__title">{{ setting('header.header_title') }}</h1>
+                        <h1 class="header__desc">{{ setting('header.header_description') }}</h1>
                     </div>
                 </div>
             </div>
@@ -67,5 +67,9 @@
                 </div>
             @endforeach
         </div>
+    </section>
+
+    <section class="agreement">
+        {{ setting('site.agreement') }}
     </section>
 @endsection

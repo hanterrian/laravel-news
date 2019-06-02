@@ -41,6 +41,20 @@ use TCG\Voyager\Traits\Translatable;
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Bank whereTermTo($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Bank whereUpdatedAt($value)
  * @mixin \Eloquent
+ * @property string|null $link_to_site
+ * @property string|null $data
+ * @property-read null $translated
+ * @property-read \Illuminate\Database\Eloquent\Collection|\TCG\Voyager\Models\Translation[] $translations
+ * @method static bool|null forceDelete()
+ * @method static \Illuminate\Database\Query\Builder|\App\Bank onlyTrashed()
+ * @method static bool|null restore()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Bank whereData($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Bank whereLinkToSite($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Bank whereTranslation($field, $operator, $value = null, $locales = null, $default = true)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Bank withTranslation($locale = null, $fallback = true)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Bank withTranslations($locales = null, $fallback = true)
+ * @method static \Illuminate\Database\Query\Builder|\App\Bank withTrashed()
+ * @method static \Illuminate\Database\Query\Builder|\App\Bank withoutTrashed()
  */
 class Bank extends Model
 {

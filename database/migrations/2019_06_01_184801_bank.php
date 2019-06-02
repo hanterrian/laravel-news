@@ -25,6 +25,8 @@ class Bank extends Migration
             $table->text('description')->nullable();
             $table->integer('link_type')->default(0);
             $table->string('link')->nullable();
+            $table->string('link_to_site')->nullable();
+            $table->text('data')->nullable();
 
             $table->integer('position')->default(0);
 
