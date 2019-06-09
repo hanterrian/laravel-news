@@ -28,7 +28,7 @@
     @yield('content')
 
     <footer class="page-footer font-small blue pt-4">
-        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+        <div class="footer-copyright text-center py-3">
             <a href="{{ url('/politics') }}" target="_blank">Политика конфиденциальности</a>
         </div>
     </footer>
