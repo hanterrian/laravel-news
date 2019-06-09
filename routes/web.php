@@ -22,4 +22,5 @@ Route::group(['domain' => 'lnews.locale'], function () {
 
 Route::group(['domain' => 'zaim.cijworld.com'], function () {
     Route::get('/', 'HomeController@index');
+    Route::get('/politics', 'HomeController@politics');
 });

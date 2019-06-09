@@ -14,4 +14,9 @@ class HomeController extends Controller
 
         return view('home.index', ['models' => $models]);
     }
+
+    public function politics()
+    {
+        return view('home.politics');
+    }
 }

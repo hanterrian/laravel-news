@@ -26,6 +26,14 @@
 
 <div class="container">
     @yield('content')
+
+    <footer>
+        <div class="row">
+            <div class="col-lg-12 align-center">
+                <a href="{{ url('/politics') }}">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </footer>
 </div>
 
 <script src="{{ asset('js/app.js') }}"></script>
