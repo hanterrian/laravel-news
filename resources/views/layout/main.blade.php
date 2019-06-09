@@ -46,7 +46,7 @@
                 appStoreLanguage: 'us',
                 inAppStore: '{{ setting('app.app_store_title') }}',
                 inGooglePlay: '{{ setting('app.app_google_title') }}',
-                button: 'VIEW',
+                button: 'Установить',
                 scale: 'auto',
                 speedIn: 300,
                 speedOut: 400,
