@@ -9,7 +9,8 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $models = Bank::all()->sortByDesc('position');
+        $models = Bank::all()
+            ->sortBy('position');
 
         return view('home.index', ['models' => $models]);
     }

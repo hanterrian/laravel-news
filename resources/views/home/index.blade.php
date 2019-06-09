@@ -24,7 +24,7 @@
 
 @section('content')
     <section class="offers">
-        <h2 class="offers__title">Предложения Украины</h2>
+        <h2 class="offers__title">{{ setting('site.slogan') }}</h2>
         <div class="row">
             @foreach($models as $model)
                 <div class="col col-lg-3 col-md-4 col-sm-6">

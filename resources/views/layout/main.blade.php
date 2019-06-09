@@ -12,6 +12,13 @@
 
     <link rel="manifest" href="/manifest.json">
 
+    @if(setting('app.enable'))
+        <meta name="apple-itunes-app" content="<?= setting('app.apple') ?>">
+        <meta name="google-play-app" content="<?= setting('app.google') ?>">
+
+        <link rel="stylesheet" href="{{ asset('css/jquery.smartbanner.css') }}">
+    @endif
+
     <?= setting('analytics.after_header') ?>
 </head>
 <body>
@@ -22,6 +29,10 @@
 </div>
 
 <script src="{{ asset('js/app.js') }}"></script>
+
+@if(setting('app.enable'))
+    <script src="{{ asset('js/jquery.smartbanner.js') }}"></script>
+@endif
 
 <script>
     !function (e, t, d, s, a, n, c) {

@@ -17,6 +17,7 @@ $color_blue_charcoal_15_approx: rgba(1, 10, 25, 0.15);
 $color_shakespeare_approx: #56add2;
 $color_pelorous_approx: #3ea1cc;
 $color_astral_approx: #2d83a8;
+$color_offer__button: #3ab6ff;
 
 //fonts
 $font_0: FiraSansRegular;
@@ -232,7 +233,7 @@ h5 {
     font-family: $font_1, $font_2;
     vertical-align: baseline;
     white-space: nowrap;
-    background-color: $color_chateau_green_approx;
+    background-color: $color_offer__button;
     //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
     transition: all .25s ease;
     outline: none;
@@ -241,19 +242,19 @@ h5 {
     &:hover {
         text-decoration: none;
         color: $white;
-        background-color: $color_chateau_green_approx;
+        background-color: $color_offer__button;
     }
     &:active {
         text-decoration: none;
         color: $white;
-        background-color: $color_sea_green_approx;
+        background-color: $color_offer__button;
         //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
         box-shadow: inset 0 2px 5px 0 $black_25;
     }
     &:focus {
         text-decoration: none;
         color: $white;
-        background-color: $color_sea_green_approx;
+        background-color: $color_offer__button;
         //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
         box-shadow: inset 0 2px 5px 0 $black_25;
     }
