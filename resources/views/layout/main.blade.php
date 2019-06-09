@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}"/>
     <link rel="shortcut icon" type="image/x-icon" href="{{ Voyager::image(setting('site.logo')) }}"/>
 
+    <link rel="manifest" href="/manifest.json">
+
     <?= setting('analytics.after_header') ?>
 </head>
 <body>
@@ -20,6 +22,13 @@
 </div>
 
 <script src="{{ asset('js/app.js') }}"></script>
+
+<script>
+    !function (e, t, d, s, a, n, c) {
+        e[a] = {}, e[a].date = (new Date).getTime(), n = t.createElement(d), c = t.getElementsByTagName(d)[0], n.type = "text/javascript", n.async = !0, n.src = s, c.parentNode.insertBefore(n, c)
+    }(window, document, "script", "https://zaimcijworldcom.push.world/https.embed.js", "pw"), pw.websiteId = "7cfa760b22cf3b1aa3ed748a1de524b8250491036460995f421d4fddb5ef0255";
+</script>
+
 <?= setting('analytics.after_body') ?>
 </body>
 </html>
