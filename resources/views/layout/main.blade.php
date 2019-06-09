@@ -29,8 +29,8 @@
 
     <footer>
         <div class="row">
-            <div class="col-lg-12 align-center">
-                <a href="{{ url('/politics') }}">Политика конфиденциальности</a>
+            <div class="col-lg-12 text-center">
+                <a href="{{ url('/politics') }}" target="_blank">Политика конфиденциальности</a>
             </div>
         </div>
     </footer>
