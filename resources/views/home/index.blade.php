@@ -30,7 +30,7 @@
                 <div class="col col-lg-3 col-md-4 col-sm-6">
                     <div class="offer">
                         <a href="{{ $model->link_to_site }}" target="_blank">
-                            <div style="background-image:url({{ str_replace(['://','//'], ['//','/'], Voyager::image($model->logo)) }})" class="offer__logo"></div>
+                            <div style="background-image:url({{ Voyager::image($model->logo) }})" class="offer__logo"></div>
                         </a>
                         <table class="offer__table">
                             <tbody>
