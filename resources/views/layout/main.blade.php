@@ -32,6 +32,31 @@
 
 @if(setting('app.enable'))
     <script src="{{ asset('js/jquery.smartbanner.js') }}"></script>
+    <script>
+        $.smartbanner({
+            title: null,
+            author: null,
+            price: '{{ setting('app.price', 'FREE') }}',
+            appStoreLanguage: 'us',
+            inAppStore: '{{ setting('app.app_store_title') }}',
+            inGooglePlay: '{{ setting('app.app_google_title') }}',
+            GooglePlayParams: null,
+            icon: null,
+            iconGloss: null,
+            url: null,
+            button: 'VIEW',
+            scale: 'auto',
+            speedIn: 300,
+            speedOut: 400,
+            daysHidden: 15,
+            daysReminder: 90,
+            force: null,
+            hideOnInstall: true,
+            layer: false,
+            iOSUniversalApp: true,
+            appendToSelector: 'body',
+        })
+    </script>
 @endif
 
 <script>
