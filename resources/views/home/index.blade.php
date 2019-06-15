@@ -43,6 +43,9 @@
                                 @case(4)
                                 <img src="{{ asset('/img/mark/pervIe1000.png') }}"/>
                                 @break
+                                @case(5)
+                                <img class="like" src="{{ asset('/img/mark/like_ua.png') }}"/>
+                                @break
                             @endswitch
                         </div>
 

@@ -20944,6 +20944,10 @@ h5 {
   left: -10px;
 }
 
+.offer_mark .like {
+  margin: 10px 0 0 10px;
+}
+
 .offer__logo {
   display: inline-block;
   height: 60px;
