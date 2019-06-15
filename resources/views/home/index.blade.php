@@ -29,6 +29,23 @@
             @foreach($models as $model)
                 <div class="col col-lg-3 col-md-4 col-sm-6">
                     <div class="offer">
+                        <div class="offer_mark">
+                            @switch($model->mark)
+                                @case(1)
+                                <img src="{{ asset('/img/mark/recomenduim_ua.png') }}"/>
+                                @break
+                                @case(2)
+                                <img src="{{ asset('/img/mark/pp_odobr_predpr.png') }}"/>
+                                @break
+                                @case(3)
+                                <img src="{{ asset('/img/mark/perviie_zaimi_pod_0.png') }}"/>
+                                @break
+                                @case(4)
+                                <img src="{{ asset('/img/mark/pervIe1000.png') }}"/>
+                                @break
+                            @endswitch
+                        </div>
+
                         <a href="{{ $model->link_to_site }}" target="_blank">
                             <div style="background-image:url({{ Voyager::image($model->logo) }})" class="offer__logo"></div>
                         </a>

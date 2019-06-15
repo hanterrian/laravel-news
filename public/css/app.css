@@ -20930,10 +20930,18 @@ h5 {
   text-align: center;
   padding-bottom: 10px;
   transition: border 0.25s ease;
+  position: relative;
 }
 
 .offer:hover {
   border-color: #428bca;
+}
+
+.offer_mark {
+  position: absolute;
+  display: block;
+  top: -10px;
+  left: -10px;
 }
 
 .offer__logo {
