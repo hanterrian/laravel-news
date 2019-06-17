@@ -3,20 +3,21 @@
 namespace App\Http\Controllers;
 
 use App\Bank;
-use Illuminate\Http\Request;
 
+/**
+ * Class HomeController
+ *
+ * @package App\Http\Controllers
+ */
 class HomeController extends Controller
 {
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function index()
     {
-        $models = Bank::all()
-            ->sortBy('position');
+        $models = Bank::all()->sortBy('position');
 
         return view('home.index', ['models' => $models]);
-    }
-
-    public function politics()
-    {
-        return view('home.politics');
     }
 }

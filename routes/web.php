@@ -18,9 +18,10 @@ Route::group(['prefix' => 'admin'], function () {
 
 Route::group(['domain' => 'lnews.locale'], function () {
     Route::get('/', 'HomeController@index');
+    Route::get('/page/{slug}', 'PageController@view');
 });
 
 Route::group(['domain' => 'zaim.cijworld.com'], function () {
     Route::get('/', 'HomeController@index');
-    Route::get('/politics', 'HomeController@politics');
+    Route::get('/page/{slug}', 'PageController@view');
 });
