@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext);@charset "UTF-8";
 
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -20783,22 +20783,6 @@ footer.bottom-footer .copyright {
   }
 }
 
-@font-face {
-  font-family: FiraSansRegular;
-  font-weight: normal;
-  font-style: normal;
-  src: url(/fonts/FiraSansRegular.eot?1250746c2931ec1be0b1a8f92a2d060e);
-  src: url(/fonts/FiraSansRegular.eot?1250746c2931ec1be0b1a8f92a2d060e) format("embedded-opentype"), url(/fonts/FiraSansRegular.woff?4114ddc0b65c90b93453d82c7e0c8052) format("woff"), url(/fonts/FiraSansRegular.ttf?d4db477de5302fdf747ecb5a9dd602d5) format("truetype");
-}
-
-@font-face {
-  font-family: FiraSansBold;
-  font-weight: normal;
-  font-style: normal;
-  src: url(/fonts/FiraSansBold.eot?5351d75bec7e771530047ed0ec54680c);
-  src: url(/fonts/FiraSansBold.eot?5351d75bec7e771530047ed0ec54680c) format("embedded-opentype"), url(/fonts/FiraSansBold.woff?3c9e3193803f0033b326adf7fb6ef4cd) format("woff"), url(/fonts/FiraSansBold.ttf?c5b3566556577dd53953e55e329f60f1) format("truetype");
-}
-
 * {
   box-sizing: border-box;
 }
@@ -20812,22 +20796,22 @@ footer.bottom-footer .copyright {
 }
 
 *:-moz-placeholder {
-  color: #666;
+  color: #0a0a0a;
   opacity: 1;
 }
 
 *:-ms-input-placeholder {
-  color: #666;
+  color: #0a0a0a;
   opacity: 1;
 }
 
 *::-webkit-input-placeholder {
-  color: #666;
+  color: #0a0a0a;
   opacity: 1;
 }
 
 *::-moz-placeholder {
-  color: #666;
+  color: #0a0a0a;
   opacity: 1;
 }
 
@@ -20837,25 +20821,26 @@ body {
   min-width: 320px;
   position: relative;
   line-height: 1.3;
-  font-family: FiraSansRegular, sans-serif;
+  font-family: "Ubuntu", sans-serif;
   overflow-x: hidden;
   opacity: 1;
+  color: #0a0a0a;
 }
 
 body input:focus:required:invalid {
-  color: #666;
+  color: #0a0a0a;
 }
 
 body input:required:valid {
-  color: #666;
+  color: #0a0a0a;
 }
 
 body textarea:focus:required:invalid {
-  color: #666;
+  color: #0a0a0a;
 }
 
 body textarea:required:valid {
-  color: #666;
+  color: #0a0a0a;
 }
 
 html {
@@ -20926,7 +20911,7 @@ h5 {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
   background-color: white;
   font-size: 16px;
-  font-family: FiraSansRegular, sans-serif;
+  font-family: "Ubuntu", sans-serif;
   text-align: center;
   padding-bottom: 10px;
   transition: border 0.25s ease;
@@ -21019,7 +21004,7 @@ h5 {
   font-weight: normal;
   letter-spacing: 0.3px;
   text-transform: uppercase;
-  font-family: FiraSansBold, sans-serif;
+  font-family: "Ubuntu", sans-serif;
   vertical-align: baseline;
   white-space: nowrap;
   background-color: #3ab6ff;
@@ -21060,7 +21045,7 @@ h5 {
 }
 
 .company__title {
-  font-family: FiraSansBold, sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .company__item {

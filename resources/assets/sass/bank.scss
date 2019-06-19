@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext');
+
 //colors
-$color_storm_dust_approx: #666;
+$color_storm_dust_approx: $black;
 $white: white;
 $color_mine_shaft_approx: #333;
 $color_alto_approx: #d9d9d9;
@@ -20,35 +22,35 @@ $color_astral_approx: #2d83a8;
 $color_offer__button: #3ab6ff;
 
 //fonts
-$font_0: FiraSansRegular;
-$font_1: FiraSansBold;
+$font_0: 'Ubuntu';
+$font_1: 'Ubuntu';
 $font_2: sans-serif;
 
 //urls
-$url_0: url(../fonts/FiraSansRegular/FiraSansRegular.eot);
-$url_1: url(../fonts/FiraSansRegular/FiraSansRegular.eot?#iefix);
-$url_2: url(../fonts/FiraSansRegular/FiraSansRegular.woff);
-$url_3: url(../fonts/FiraSansRegular/FiraSansRegular.ttf);
-$url_4: url(../fonts/FiraSansBold/FiraSansBold.eot);
-$url_5: url(../fonts/FiraSansBold/FiraSansBold.eot?#iefix);
-$url_6: url(../fonts/FiraSansBold/FiraSansBold.woff);
-$url_7: url(../fonts/FiraSansBold/FiraSansBold.ttf);
-
-@font-face {
-    font-family: $font_0;
-    font-weight: normal;
-    font-style: normal;
-    src: $url_0;
-    src: $url_1 format("embedded-opentype"), $url_2 format("woff"), $url_3 format("truetype");
-}
-
-@font-face {
-    font-family: $font_1;
-    font-weight: normal;
-    font-style: normal;
-    src: $url_4;
-    src: $url_5 format("embedded-opentype"), $url_6 format("woff"), $url_7 format("truetype");
-}
+//$url_0: url(../fonts/FiraSansRegular/FiraSansRegular.eot);
+//$url_1: url(../fonts/FiraSansRegular/FiraSansRegular.eot?#iefix);
+//$url_2: url(../fonts/FiraSansRegular/FiraSansRegular.woff);
+//$url_3: url(../fonts/FiraSansRegular/FiraSansRegular.ttf);
+//$url_4: url(../fonts/FiraSansBold/FiraSansBold.eot);
+//$url_5: url(../fonts/FiraSansBold/FiraSansBold.eot?#iefix);
+//$url_6: url(../fonts/FiraSansBold/FiraSansBold.woff);
+//$url_7: url(../fonts/FiraSansBold/FiraSansBold.ttf);
+//
+//@font-face {
+//    font-family: $font_0;
+//    font-weight: normal;
+//    font-style: normal;
+//    src: $url_0;
+//    src: $url_1 format("embedded-opentype"), $url_2 format("woff"), $url_3 format("truetype");
+//}
+//
+//@font-face {
+//    font-family: $font_1;
+//    font-weight: normal;
+//    font-style: normal;
+//    src: $url_4;
+//    src: $url_5 format("embedded-opentype"), $url_6 format("woff"), $url_7 format("truetype");
+//}
 
 * {
     //Instead of the line below you could use @include box-sizing($bs)
@@ -94,6 +96,7 @@ body {
     font-family: $font_0, $font_2;
     overflow-x: hidden;
     opacity: 1;
+    color: $black;
 
     input {
         &:focus:required:invalid {
