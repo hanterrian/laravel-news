@@ -19,7 +19,7 @@ class CreditController extends Controller
         $models = Bank::all()->sortBy('position');
 
         $model = Bank::inRandomOrder()->first();
-        
+
         return view('credit.index', [
             'model' => $model,
             'models' => $models
