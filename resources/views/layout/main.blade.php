@@ -13,10 +13,13 @@
     <link rel="manifest" href="/manifest.json">
 
     @if(setting('app.enable'))
-        <meta name="apple-itunes-app" content="<?= setting('app.apple') ?>">
-        <meta name="google-play-app" content="<?= setting('app.google') ?>">
+        <meta name="apple-itunes-app" content="app-id=54400766423232324">
+        <meta name="google-play-app" content="app-id=com.finapps.toploansatstakeinukraine">
 
-        <link rel="stylesheet" href="{{ asset('css/jquery.smartbanner.css') }}">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="android-touch-icon" href="android-icon.png"/>
+
+        <link rel="stylesheet" href="{{ asset('smartbanner/smart-app-banner.css') }}">
     @endif
 
     <?= setting('analytics.after_header') ?>
@@ -37,23 +40,25 @@
 <script src="{{ asset('js/app.js') }}"></script>
 
 @if(setting('app.enable'))
-    <script src="{{ asset('js/jquery.smartbanner.js') }}"></script>
+    <script src="{{ asset('smartbanner/smart-app-banner.js') }}"></script>
     <script>
-        $(function () {
-            $.smartbanner({
-                title: '{{ setting('app.banner_title') }}',
-                price: '{{ setting('app.price', 'FREE') }}',
-                appStoreLanguage: 'us',
-                inAppStore: '{{ setting('app.app_store_title') }}',
-                inGooglePlay: '{{ setting('app.app_google_title') }}',
-                button: 'Установить',
-                scale: 'auto',
-                speedIn: 300,
-                speedOut: 400,
-                daysHidden: 15,
-                daysReminder: 90,
-                appendToSelector: 'body',
-            });
+        new SmartBanner({
+            daysHidden: 15,
+            daysReminder: 90,
+            appStoreLanguage: 'us',
+            title: '{{ setting('app.banner_title') }}',
+            author: 'Cijworld',
+            button: 'Установить',
+            store: {
+                ios: '{{ setting('app.app_store_title') }}',
+                android: '{{ setting('app.app_google_title') }}',
+            },
+            price: {
+                ios: 'FREE',
+                android: 'FREE',
+                windows: 'FREE'
+            },
+            icon: '/smartbanner/smart-app-banner.png'
         });
     </script>
 @endif
