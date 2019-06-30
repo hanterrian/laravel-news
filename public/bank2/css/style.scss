@@ -44,72 +44,6 @@ $url_4: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AA
   margin: -1px;
 }
 
-@media(max-width: 460px) {
-  .offer_wrap {
-    display: inline-block;
-    width: 49%;
-    text-align: center;
-    text-decoration: none;
-    vertical-align: middle;
-    margin: 5px auto 0 auto;
-  }
-  .offers__logo {
-    height: 4rem;
-    margin-bottom: 1.3rem;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    height: 4rem;
-    margin-bottom: 1.3rem;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-  }
-  #cr_p5 {
-    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
-    border-radius: 5px;
-    border: 2px solid #2e9cdcfa;
-    color: $color_mine_shaft_approx;
-    float: left;
-    font-size: 14px;
-    line-height: 14px;
-    width: 80%;
-    margin: 9px 10% 0;
-    text-transform: uppercase;
-    padding: 10px 0;
-    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
-    border-radius: 5px;
-    border: 2px solid #2e9cdcfa;
-    color: $color_mine_shaft_approx;
-    float: left;
-    font-size: 14px;
-    line-height: 14px;
-    width: 80%;
-    margin: 9px 10% 0;
-    text-transform: uppercase;
-    padding: 10px 0;
-  }
-  #cr_block_new {
-    padding-bottom: 10px;
-    padding-bottom: 10px;
-  }
-  h2 {
-    margin: 4px;
-    margin: 4px;
-
-    .inner-text {
-      font-size: 1.1em;
-      font-size: 1.1em;
-    }
-  }
-  .parallelogram span {
-    font-size: 12px;
-    font-size: 12px;
-  }
-}
-
 html {
   line-height: 1.15;
   font-size: 10px;
@@ -1574,4 +1508,70 @@ h2 .inner-text {
   left: -.3em;
   float: left;
   right: .3em;
+}
+
+@media(max-width: 460px) {
+    .offer_wrap {
+        display: inline-block;
+        width: 49%;
+        text-align: center;
+        text-decoration: none;
+        vertical-align: middle;
+        margin: 5px auto 0 auto;
+    }
+    .offers__logo {
+        height: 4rem;
+        margin-bottom: 1.3rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        height: 4rem;
+        margin-bottom: 1.3rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    #cr_p5 {
+        //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+        border-radius: 5px;
+        border: 2px solid #2e9cdcfa;
+        color: $color_mine_shaft_approx;
+        float: left;
+        font-size: 14px;
+        line-height: 14px;
+        width: 80%;
+        margin: 9px 10% 0;
+        text-transform: uppercase;
+        padding: 10px 0;
+        //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+        border-radius: 5px;
+        border: 2px solid #2e9cdcfa;
+        color: $color_mine_shaft_approx;
+        float: left;
+        font-size: 14px;
+        line-height: 14px;
+        width: 80%;
+        margin: 9px 10% 0;
+        text-transform: uppercase;
+        padding: 10px 0;
+    }
+    #cr_block_new {
+        padding-bottom: 10px;
+        padding-bottom: 10px;
+    }
+    h2 {
+        margin: 4px;
+        margin: 4px;
+
+        .inner-text {
+            font-size: 1.1em;
+            font-size: 1.1em;
+        }
+    }
+    .parallelogram span {
+        font-size: 12px;
+        font-size: 12px;
+    }
 }
