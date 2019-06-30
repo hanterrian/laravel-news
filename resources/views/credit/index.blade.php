@@ -32,7 +32,7 @@
         <link rel="apple-touch-icon" href="{{ asset('smartbanner/smart-app-banner.png') }}">
         <link rel="android-touch-icon" href="{{ asset('smartbanner/smart-app-banner.png') }}"/>
 
-        <link rel="stylesheet" href="{{ asset('smartbanner/smart-app-banner.css') }}">
+        <link rel="stylesheet" href="{{ asset('smartbanner/smart-app-banner2.css') }}">
     @endif
 </head>
 <body>
