@@ -96,26 +96,6 @@
                 <a class="offer_wrap offer_link" target="_blank" href="{{ $model->link_to_site }}" data-oid="10">
                     <div class="link_offers">
                         <div id="cr_block_new-{{ $model->id }}">
-                            <div class="offer_mark">
-                                @switch($model->mark)
-                                    @case(1)
-                                    <img src="{{ asset('/img/mark/recomenduim_ua.png') }}"/>
-                                    @break
-                                    @case(2)
-                                    <img src="{{ asset('/img/mark/pp_odobr_predpr.png') }}"/>
-                                    @break
-                                    @case(3)
-                                    <img src="{{ asset('/img/mark/perviie_zaimi_pod_0.png') }}"/>
-                                    @break
-                                    @case(4)
-                                    <img src="{{ asset('/img/mark/pervIe1000.png') }}"/>
-                                    @break
-                                    @case(5)
-                                    <img class="like" src="{{ asset('/img/mark/like_ua.png') }}"/>
-                                    @break
-                                @endswitch
-                            </div>
-
                             <div class="offers__logo">
                                 <img src="{{ Voyager::image($model->logo) }}" alt="Быстрая выдача" class="oimg"/>
                             </div>
