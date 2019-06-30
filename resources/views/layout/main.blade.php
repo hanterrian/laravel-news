@@ -32,6 +32,11 @@
 
     <footer class="page-footer font-small blue pt-4">
         <div class="footer-copyright text-center py-3">
+            <a href="https://play.google.com/store/apps/details?id=com.finapps.toploansatstakeinukraine" target="_blank">
+                <img src="{{ asset('apps/google_play_UAfinPro1111.png') }}" alt="google play app"/>
+            </a>
+        </div>
+        <div class="footer-copyright text-center py-3">
             <a href="{{ url('/page/privacy-policy') }}" target="_blank">Политика конфиденциальности</a>
         </div>
     </footer>
