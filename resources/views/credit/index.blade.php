@@ -59,25 +59,29 @@
         из суммы займа 1 000 грн и суммы начисленных процентов за 90 дн. 9 грн и равна 1090 грн.
     </p>
 </div>
-<div class="notificate-wrapper" style="z-index:99999999;">
-    <div class="notice-block action-3 not-opened" style="display: none;" id="hidden_content">
-        <div class="notice-close" onclick="this.parentNode.style.display = 'none';"></div>
-        <a href="http://bit.ly/2KnTUsL" target="_blank" class="offer_link" data-oid="10">
-            <div class="notice-image">
-                <img src="/image/CreditPLUS2019.png" alt="">
-            </div>
-            <div class="notice-data">
-                <div class="notice-title">Займ за 9 минут!</div>
-                <div class="notice-text">до 3 000 грн онлайн
-                    <br>
-                    одобрение автоматически
-                    <br>
-                    <u>Получить займ</u>
+
+@if($model)
+    <div class="notificate-wrapper" style="z-index:99999999;">
+        <div class="notice-block action-3 not-opened" style="display: none;" id="hidden_content">
+            <div class="notice-close" onclick="this.parentNode.style.display = 'none';"></div>
+            <a href="{{ $model->link_to_site }}" target="_blank" class="offer_link" data-oid="10">
+                <div class="notice-image">
+                    <img src="{{ Voyager::image($model->logo) }}" alt="">
                 </div>
-            </div>
-        </a>
+                <div class="notice-data">
+                    <div class="notice-title">Займ за 9 минут!</div>
+                    <div class="notice-text">до {{ $model->sum }} грн онлайн
+                        <br>
+                        одобрение автоматически
+                        <br>
+                        <u>Получить займ</u>
+                    </div>
+                </div>
+            </a>
+        </div>
     </div>
-</div>
+@endif
+
 <section class="wrapper">
     <center>
         <p class="topp">Получите лучшие условия займа и увеличте % одобрения отправляя 4-5 заявок!</p>
@@ -237,7 +241,7 @@
                 информационный характер. Условия выдачи займов (кредитов)
                 уточняйте на сайте МФО или банка.
             </div>
-            <div class="footer__text footer__link">
+            <div class="footer__link">
                 <a href="{{ url('/page/privacy-policy') }}" target="_blank">Политика конфиденциальности</a>
             </div>
             <div class="copyright">&copy; cjiworld.com.</div>

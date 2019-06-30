@@ -634,6 +634,13 @@ ul {
   padding: 14px 0;
 }
 
+.footer__link {
+  font-size: 1.45rem;
+  line-height: 1.35;
+  padding: 14px 0;
+  color: #ffffff;
+}
+
 .footer::before {
   content: "";
   display: block;

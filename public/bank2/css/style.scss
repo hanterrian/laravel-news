@@ -38,294 +38,294 @@ $url_3: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AA
 $url_4: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGYSURBVEhL5ZSvTsNQFMbXZGICMYGYmJhAQIJAICYQPAACiSDB8AiICQQJT4CqQEwgJvYASAQCiZiYmJhAIBATCARJy+9rTsldd8sKu1M0+dLb057v6/lbq/2rK0mS/TRNj9cWNAKPYIJII7gIxCcQ51cvqID+GIEX8ASG4B1bK5gIZFeQfoJdEXOfgX4QAQg7kH2A65yQ87lyxb27sggkAzAuFhbbg1K2kgCkB1bVwyIR9m2L7PRPIhDUIXgGtyKw575yz3lTNs6X4JXnjV+LKM/m3MydnTbtOKIjtz6VhCBq4vSm3ncdrD2lk0VgUXSVKjVDJXJzijW1RQdsU7F77He8u68koNZTz8Oz5yGa6J3H3lZ0xYgXBK2QymlWWA+RWnYhskLBv2vmE+hBMCtbA7KX5drWyRT/2JsqZ2IvfB9Y4bWDNMFbJRFmC9E74SoS0CqulwjkC0+5bpcV1CZ8NMej4pjy0U+doDQsGyo1hzVJttIjhQ7GnBtRFN1UarUlH8F3xict+HY07rEzoUGPlWcjRFRr4/gChZgc3ZL2d8oAAAAASUVORK5CYII=);
 
 .vishi {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
+    position: absolute;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
 }
 
 html {
-  line-height: 1.15;
-  font-size: 10px;
-  font-size: 3.13vw;
+    line-height: 1.15;
+    font-size: 10px;
+    font-size: 3.13vw;
 
-  [type=button] {
-  }
+    [type=button] {
+    }
 }
 
 body {
-  font-family: $font_2, $font_1;
-  font-weight: 400;
-  font-size: 1.4rem;
-  padding: 0;
-  margin: 0;
-  color: $color_fuscous_gray_approx;
-  background: $white;
+    font-family: $font_2, $font_1;
+    font-weight: 400;
+    font-size: 1.4rem;
+    padding: 0;
+    margin: 0;
+    color: $color_fuscous_gray_approx;
+    background: $white;
 }
 
 a {
-  background-color: transparent;
+    background-color: transparent;
 
-  &.clickgoal {
-    text-decoration: none;
-  }
+    &.clickgoal {
+        text-decoration: none;
+    }
 }
 
 article {
-  display: block;
+    display: block;
 }
 
 aside {
-  display: block;
+    display: block;
 }
 
 footer {
-  display: block;
+    display: block;
 }
 
 header {
-  display: block;
-  background: $color_japanese_laurel_approx;
-  padding: 1.3rem 0 1.2rem;
+    display: block;
+    background: $color_japanese_laurel_approx;
+    padding: 1.3rem 0 1.2rem;
 }
 
 nav {
-  display: block;
+    display: block;
 }
 
 section {
-  display: block;
+    display: block;
 }
 
 h1 {
-  font-size: 2em;
-  margin: .67em 0;
-  font-family: $font_3, $font_4;
-  text-transform: uppercase;
-  text-align: center;
-  color: $white;
-  margin: 0;
-  font-size: 1.76rem;
-  font-weight: 400;
-  line-height: 1;
-  letter-spacing: 1px;
-  //Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-  text-shadow: 2px 2px 10px $black_50;
+    font-size: 2em;
+    margin: .67em 0;
+    font-family: $font_3, $font_4;
+    text-transform: uppercase;
+    text-align: center;
+    color: $white;
+    margin: 0;
+    font-size: 1.76rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 1px;
+    //Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+    text-shadow: 2px 2px 10px $black_50;
 }
 
 figcaption {
-  display: block;
+    display: block;
 }
 
 figure {
-  display: block;
-  margin: 1em 40px;
+    display: block;
+    margin: 1em 40px;
 }
 
 main {
-  display: block;
+    display: block;
 }
 
 hr {
-  //Instead of the line below you could use @include box-sizing($bs)
-  box-sizing: content-box;
-  height: 0;
-  overflow: visible;
+    //Instead of the line below you could use @include box-sizing($bs)
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
 }
 
 pre {
-  font-family: $font_0, $font_0;
-  font-size: 1em;
+    font-family: $font_0, $font_0;
+    font-size: 1em;
 }
 
 abbr[title] {
-  border-bottom: none;
-  text-decoration: underline dotted;
+    border-bottom: none;
+    text-decoration: underline dotted;
 }
 
 b {
-  font-weight: inherit;
-  font-weight: bolder;
+    font-weight: inherit;
+    font-weight: bolder;
 }
 
 strong {
-  font-weight: inherit;
-  font-weight: bolder;
+    font-weight: inherit;
+    font-weight: bolder;
 }
 
 code {
-  font-family: $font_0, $font_0;
-  font-size: 1em;
+    font-family: $font_0, $font_0;
+    font-size: 1em;
 }
 
 kbd {
-  font-family: $font_0, $font_0;
-  font-size: 1em;
+    font-family: $font_0, $font_0;
+    font-size: 1em;
 }
 
 samp {
-  font-family: $font_0, $font_0;
-  font-size: 1em;
+    font-family: $font_0, $font_0;
+    font-size: 1em;
 }
 
 dfn {
-  font-style: italic;
+    font-style: italic;
 }
 
 mark {
-  background-color: $yellow;
-  color: $black;
+    background-color: $yellow;
+    color: $black;
 }
 
 small {
-  font-size: 80%;
+    font-size: 80%;
 }
 
 sub {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-  bottom: -.25em;
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+    bottom: -.25em;
 }
 
 sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-  top: -.5em;
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+    top: -.5em;
 }
 
 audio {
-  display: inline-block;
+    display: inline-block;
 
-  &:not([controls]) {
-    display: none;
-    height: 0;
-  }
+    &:not([controls]) {
+        display: none;
+        height: 0;
+    }
 }
 
 video {
-  display: inline-block;
+    display: inline-block;
 }
 
 img {
-  border-style: none;
+    border-style: none;
 }
 
 button {
-  font-family: $font_1;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
+    font-family: $font_1;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+    overflow: visible;
+    text-transform: none;
 
-  &:-moz-focusring {
-    outline: 1px dotted ButtonText;
-  }
+    &:-moz-focusring {
+        outline: 1px dotted ButtonText;
+    }
 
-  &.toast-close-button {
-    padding: 0;
-    cursor: pointer;
-    background: 0 0;
-    border: 0;
-  }
+    &.toast-close-button {
+        padding: 0;
+        cursor: pointer;
+        background: 0 0;
+        border: 0;
+    }
 }
 
 input {
-  font-family: $font_1;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
+    font-family: $font_1;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+    overflow: visible;
 }
 
 optgroup {
-  font-family: $font_1;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
+    font-family: $font_1;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
 }
 
 select {
-  font-family: $font_1;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  text-transform: none;
+    font-family: $font_1;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+    text-transform: none;
 }
 
 textarea {
-  font-family: $font_1;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: auto;
+    font-family: $font_1;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+    overflow: auto;
 }
 
 [type=button]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
+    border-style: none;
+    padding: 0;
 }
 
 [type=reset]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
+    border-style: none;
+    padding: 0;
 }
 
 [type=submit]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
+    border-style: none;
+    padding: 0;
 }
 
 button::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
+    border-style: none;
+    padding: 0;
 }
 
 fieldset {
-  padding: .35em .75em .625em;
+    padding: .35em .75em .625em;
 }
 
 legend {
-  //Instead of the line below you could use @include box-sizing($bs)
-  box-sizing: border-box;
-  color: inherit;
-  display: table;
-  max-width: 100%;
-  padding: 0;
-  white-space: normal;
+    //Instead of the line below you could use @include box-sizing($bs)
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal;
 }
 
 progress {
-  display: inline-block;
-  vertical-align: baseline;
+    display: inline-block;
+    vertical-align: baseline;
 }
 
 [type=checkbox] {
-  //Instead of the line below you could use @include box-sizing($bs)
-  box-sizing: border-box;
-  padding: 0;
+    //Instead of the line below you could use @include box-sizing($bs)
+    box-sizing: border-box;
+    padding: 0;
 }
 
 [type=radio] {
-  //Instead of the line below you could use @include box-sizing($bs)
-  box-sizing: border-box;
-  padding: 0;
+    //Instead of the line below you could use @include box-sizing($bs)
+    box-sizing: border-box;
+    padding: 0;
 }
 
 [type=number]::-webkit-inner-spin-button {
-  height: auto;
+    height: auto;
 }
 
 [type=number]::-webkit-outer-spin-button {
-  height: auto;
+    height: auto;
 }
 
 [type=search] {
-  outline-offset: -2px;
+    outline-offset: -2px;
 }
 
 [type=search]::-webkit-search-cancel-button {
@@ -335,1179 +335,1186 @@ progress {
 }
 
 ::-webkit-file-upload-button {
-  font: inherit;
+    font: inherit;
 }
 
 details {
-  display: block;
+    display: block;
 }
 
 menu {
-  display: block;
+    display: block;
 }
 
 summary {
-  display: list-item;
+    display: list-item;
 }
 
 canvas {
-  display: inline-block;
+    display: inline-block;
 }
 
 template {
-  display: none;
+    display: none;
 }
 
 [hidden] {
-  display: none;
+    display: none;
 }
 
 h1::before {
-  content: "";
-  display: inline-block;
-  width: 100%;
-  height: 3.3rem;
-  background-size: contain;
-  margin-bottom: .7rem;
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 3.3rem;
+    background-size: contain;
+    margin-bottom: .7rem;
 }
 
 @media only screen and(min-width: 460px) {
-  h2 {
-    margin: 0 -2.5rem .2rem;
-    font-size: 16px;
-  }
+    h2 {
+        margin: 0 -2.5rem .2rem;
+        font-size: 16px;
+    }
 }
 
 h3 {
-  font-size: 2.11rem;
-  font-weight: 600;
-  margin: 2.2rem 0 0;
-  line-height: 1.2;
-  white-space: nowrap;
-  text-align: center;
+    font-size: 2.11rem;
+    font-weight: 600;
+    margin: 2.2rem 0 0;
+    line-height: 1.2;
+    white-space: nowrap;
+    text-align: center;
 }
 
 h4 {
-  font-size: 1.66rem;
-  margin: 0;
+    font-size: 1.66rem;
+    margin: 0;
 }
 
 ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .content {
-  padding: 0 1.7rem;
-  box-sizing: border-box;
+    padding: 0 1.7rem;
+    box-sizing: border-box;
 }
 
 .note {
-  text-align: center;
-  margin: 1.5rem 0;
-  line-height: 1.7;
-  font-family: $font_5, $font_1;
+    text-align: center;
+    margin: 1.5rem 0;
+    line-height: 1.7;
+    font-family: $font_5, $font_1;
 }
 
 .offers__item {
-  border: 1px solid $color_cloud_approx;
-  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
-  border-radius: .5rem;
-  //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-  box-shadow: -1px 3px 7px $color_celeste_approx;
-  position: relative;
-  overflow: hidden;
-  padding-bottom: 1rem;
-  //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
-  transition: all .3s;
-
-  &:active {
+    border: 1px solid $color_cloud_approx;
+    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+    border-radius: .5rem;
     //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-    box-shadow: -1px 3px 15px $color_mountain_mist_approx;
-  }
+    box-shadow: -1px 3px 7px $color_celeste_approx;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 1rem;
+    //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+    transition: all .3s;
 
-  &:focus {
-    //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-    box-shadow: -1px 3px 15px $color_mountain_mist_approx;
-  }
+    &:active {
+        //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+        box-shadow: -1px 3px 15px $color_mountain_mist_approx;
+    }
 
-  &:hover {
-    //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-    box-shadow: -1px 3px 15px $color_mountain_mist_approx;
-  }
+    &:focus {
+        //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+        box-shadow: -1px 3px 15px $color_mountain_mist_approx;
+    }
 
-  &:not(:last-child) {
-    margin-bottom: 3rem;
-  }
+    &:hover {
+        //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+        box-shadow: -1px 3px 15px $color_mountain_mist_approx;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
 }
 
 .offers__logo {
-  text-align: center;
-  display: flex;
-  justify-content: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 
-  img {
-    display: inline-block;
-    max-width: 90%;
-    max-height: 90%;
-  }
+    img {
+        display: inline-block;
+        max-width: 90%;
+        max-height: 90%;
+    }
 }
 
 .offers__title {
-  font-size: 1.81rem;
-  text-align: center;
-  margin-bottom: .5rem;
+    font-size: 1.81rem;
+    text-align: center;
+    margin-bottom: .5rem;
 }
 
 .offers__top {
-  line-height: .9;
-  height: 45px;
-  justify-content: center;
-  align-items: center;
-  white-space: nowrap;
-  background: #2e9cdcfa;
-  color: $white;
-  font-weight: 500;
-  font-family: $font_6;
-  font-size: 11px;
-  //Instead of the line below you could use @include box-sizing($bs)
-  box-sizing: border-box;
-  text-transform: uppercase;
-  width: 100%;
-  vertical-align: middle;
+    line-height: .9;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    background: #2e9cdcfa;
+    color: $white;
+    font-weight: 500;
+    font-family: $font_6;
+    font-size: 11px;
+    //Instead of the line below you could use @include box-sizing($bs)
+    box-sizing: border-box;
+    text-transform: uppercase;
+    width: 100%;
+    vertical-align: middle;
 }
 
 .offers__column {
-  padding: 0 1.5rem;
-  margin-bottom: 1.5rem;
+    padding: 0 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .offers__limit {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .offers__limit-item {
-  font-size: 1.8rem;
-  white-space: nowrap;
+    font-size: 1.8rem;
+    white-space: nowrap;
 
-  strong {
-    font-size: 2.2rem;
-  }
+    strong {
+        font-size: 2.2rem;
+    }
 
-  &:first-child {
-    margin-right: .5rem;
-  }
+    &:first-child {
+        margin-right: .5rem;
+    }
 }
 
 .offers__list {
-  font-size: 1.4rem;
-  margin-top: -.5rem;
+    font-size: 1.4rem;
+    margin-top: -.5rem;
 }
 
 .offers__list-item {
-  margin-bottom: .3rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  border-bottom: 1px dotted $color_scarpa_flow_approx;
+    margin-bottom: .3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px dotted $color_scarpa_flow_approx;
 }
 
 .offers__list-title {
-  background: $white;
-  padding: .5rem;
-  margin-bottom: -.9rem;
-  padding-left: 0;
+    background: $white;
+    padding: .5rem;
+    margin-bottom: -.9rem;
+    padding-left: 0;
 }
 
 .offers__list-value {
-  background: $white;
-  padding: .5rem;
-  margin-bottom: -.9rem;
-  padding-right: 0;
+    background: $white;
+    padding: .5rem;
+    margin-bottom: -.9rem;
+    padding-right: 0;
 }
 
 #cr_block_new {
-  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
-  border-radius: 5px;
-  margin-left: 14px;
-  overflow: hidden;
-  background-color: $white;
-  //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-  box-shadow: 1px 1px 10px $black_30;
-  //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
-  transition: all ease-in-out .2s;
+    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+    border-radius: 5px;
+    margin-left: 14px;
+    overflow: hidden;
+    background-color: $white;
+    //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+    box-shadow: 1px 1px 10px $black_30;
+    //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+    transition: all ease-in-out .2s;
 
-  &:hover {
-    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
-    transform: scale(1.05);
+    &:hover {
+        //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+        transform: scale(1.05);
 
-    #cr_p5 {
-      background-color: #2e9cdcfa;
-      border-color: #2e9cdcfa;
-      color: $white;
+        #cr_p5 {
+            background-color: #2e9cdcfa;
+            border-color: #2e9cdcfa;
+            color: $white;
+        }
     }
-  }
 
-  #cr_cont {
-    float: left;
-    width: 100%;
-  }
+    #cr_cont {
+        float: left;
+        width: 100%;
+    }
 
-  #cr_p_new {
-    color: $color_mine_shaft_approx;
-    font-size: 14px;
-    height: 10px;
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-    background: $color_wild_sand_approx;
-  }
+    #cr_p_new {
+        color: $color_mine_shaft_approx;
+        font-size: 14px;
+        height: 10px;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        background: $color_wild_sand_approx;
+    }
 }
 
 .offer_wrap {
-  display: inline-block;
-  width: 20%;
-  text-align: center;
-  vertical-align: top;
-  text-decoration: none;
-  margin-top: 1%;
-  margin-left: 2.5%;
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    vertical-align: top;
+    text-decoration: none;
+    margin-top: 1%;
+    margin-left: 2.5%;
 }
 
 .parallelogram__wrapper {
-  white-space: nowrap;
+    white-space: nowrap;
 }
 
 .parallelogram {
-  background: #2e9cdcfa;
-  color: $white;
-  font-weight: 500;
-  font-size: 11px;
-  padding: 5px 0;
-  //Instead of the line below you could use @include box-sizing($bs)
-  box-sizing: border-box;
-  text-transform: uppercase;
-  width: 100%;
-  vertical-align: middle;
+    background: #2e9cdcfa;
+    color: $white;
+    font-weight: 500;
+    font-size: 11px;
+    padding: 5px 0;
+    //Instead of the line below you could use @include box-sizing($bs)
+    box-sizing: border-box;
+    text-transform: uppercase;
+    width: 100%;
+    vertical-align: middle;
 
-  span {
-    font-size: 16px;
-  }
+    span {
+        font-size: 16px;
+    }
 }
 
 #cr_p_new2 {
-  color: $color_mine_shaft_approx;
-  font-size: 14px;
-  height: 10px;
-  padding: 0 14px;
-  width: 100%;
-  text-align: center;
-  padding: 10px 0;
+    color: $color_mine_shaft_approx;
+    font-size: 14px;
+    height: 10px;
+    padding: 0 14px;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
 }
 
 #cr_p5 {
-  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
-  border-radius: 5px;
-  border: 2px solid #2e9cdcfa;
-  color: $color_mine_shaft_approx;
-  float: left;
-  font-size: 14px;
-  line-height: 14px;
-  text-align: center;
-  width: 80%;
-  margin: 9px 10%;
-  text-transform: uppercase;
-  padding: 10px 0;
+    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+    border-radius: 5px;
+    border: 2px solid #2e9cdcfa;
+    color: $color_mine_shaft_approx;
+    float: left;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    width: 80%;
+    margin: 9px 10%;
+    text-transform: uppercase;
+    padding: 10px 0;
 }
 
 .button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: $white;
-  font-size: 1.48rem;
-  height: 3.1rem;
-  overflow: hidden;
-  background: $color_mountain_mist_approx;
-  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
-  border-radius: .3rem;
-  margin: 2.9rem auto .5rem;
-  text-decoration: none;
-  max-width: 18rem;
-  position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    font-size: 1.48rem;
+    height: 3.1rem;
+    overflow: hidden;
+    background: $color_mountain_mist_approx;
+    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+    border-radius: .3rem;
+    margin: 2.9rem auto .5rem;
+    text-decoration: none;
+    max-width: 18rem;
+    position: relative;
 }
 
 .button::after {
-  content: "";
-  display: block;
-  background: $white_10;
-  //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
-  transform: rotate(-8deg);
-  width: 200%;
-  height: 200%;
-  left: -95%;
-  position: absolute;
-  top: -111%;
+    content: "";
+    display: block;
+    background: $white_10;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: rotate(-8deg);
+    width: 200%;
+    height: 200%;
+    left: -95%;
+    position: absolute;
+    top: -111%;
 }
 
 .button-green {
-  background: $color_japanese_laurel_approx;
-  //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
-  transition: all .3s;
+    background: $color_japanese_laurel_approx;
+    //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+    transition: all .3s;
 
-  &:active {
-    background-color: $color_sushi_approx;
-  }
+    &:active {
+        background-color: $color_sushi_approx;
+    }
 
-  &:focus {
-    background-color: $color_sushi_approx;
-  }
+    &:focus {
+        background-color: $color_sushi_approx;
+    }
 
-  &:hover {
-    background-color: $color_sushi_approx;
-  }
+    &:hover {
+        background-color: $color_sushi_approx;
+    }
 
-  &:active::after {
-    margin-top: -2px;
-  }
+    &:active::after {
+        margin-top: -2px;
+    }
 
-  &:focus::after {
-    margin-top: -2px;
-  }
+    &:focus::after {
+        margin-top: -2px;
+    }
 
-  &:hover::after {
-    margin-top: -2px;
-  }
+    &:hover::after {
+        margin-top: -2px;
+    }
 }
 
 .payment {
-  margin-top: 3rem;
-  display: flex;
-  justify-content: flex-start;
-  align-items: stretch;
-  flex-wrap: wrap;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
 }
 
 .payment__item {
-  width: 50%;
-  flex-basis: 50%;
-  margin-bottom: 2rem;
-  text-align: center;
+    width: 50%;
+    flex-basis: 50%;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
 .icon {
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  vertical-align: middle;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    vertical-align: middle;
 }
 
 .icon-list {
-  width: 33px;
-  height: 46px;
+    width: 33px;
+    height: 46px;
 }
 
 .footer {
-  color: $white;
-  padding: 7.5rem 0 2rem;
-  position: relative;
-  margin-top: 2rem;
+    color: $white;
+    padding: 7.5rem 0 2rem;
+    position: relative;
+    margin-top: 2rem;
 }
 
 .footer__wrap {
-  background: #2e9cdcfa;
+    background: #2e9cdcfa;
 }
 
 .footer__text {
-  font-size: 1.45rem;
-  line-height: 1.35;
-  padding: 14px 0;
+    font-size: 1.45rem;
+    line-height: 1.35;
+    padding: 14px 0;
+}
+
+.footer__link {
+    font-size: 1.45rem;
+    line-height: 1.35;
+    padding: 14px 0;
+    color: #ffffff;
 }
 
 .footer::before {
-  content: "";
-  display: block;
-  width: 8rem;
-  height: 4rem;
-  position: absolute;
-  top: 2rem;
-  left: 50%;
-  //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
-  transform: translateX(-50%);
+    content: "";
+    display: block;
+    width: 8rem;
+    height: 4rem;
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateX(-50%);
 }
 
 .copyright {
-  font-weight: 600;
-  font-size: 1.5rem;
-  margin-top: 2rem;
-  text-align: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    text-align: center;
 }
 
 .textBlock {
-  p {
-    margin: .5rem 0;
-    line-height: 1.3;
-    letter-spacing: .5px;
-
-    + h4 {
-      margin-top: 2.5rem;
-    }
-  }
-
-  ul {
-    margin: .5rem 0;
-    line-height: 1.3;
-    letter-spacing: .5px;
-
-    + h4 {
-      margin-top: 2.5rem;
-    }
-  }
-}
-
-@media screen and(min-width: 460px) {
-  html {
-    font-size: 12px;
-  }
-  .offers__column {
-    padding: 0 2rem;
-  }
-  .offers__list {
-    max-width: 400px;
-    margin: 0 auto;
-  }
-  .offers__item {
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media screen and(min-width: 600px) {
-  html {
-    font-size: 13px;
-  }
-  .payment__item {
-    width: 30%;
-    flex-basis: 30%;
-  }
-}
-
-@media screen and(min-width: 768px) {
-  html {
-    font-size: 10px;
-  }
-  body {
-    font-size: 1.55rem;
-    background: $white;
-  }
-  h1 {
-    font-size: 4rem;
-    //Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-    text-shadow: 2px 2px 10px $black_50;
-  }
-  h1::before {
-    height: 7rem;
-    margin-bottom: 1.5rem;
-  }
-  h2 {
-    font-size: 14px;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    position: relative;
-    text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-
-    .inner-text {
-      display: inline-block;
-      vertical-align: top;
-      padding-left: 1rem;
-      padding-right: 1rem;
-      white-space: nowrap;
-      font-size: 2em;
-    }
-  }
-  h2::after {
-    content: "";
-    display: inline-block;
-    width: 8rem;
-    height: 4rem;
-    background-size: contain;
-  }
-  h2::before {
-    content: "";
-    display: inline-block;
-    width: 8rem;
-    height: 4rem;
-    background-size: contain;
-  }
-  h3 {
-    font-size: 3.2rem;
-    margin: 3rem 0 4rem;
-
-    .icon {
-      margin-right: 1rem;
-    }
-  }
-  .offers__top {
-    height: 2.5rem;
-  }
-  h4 {
-    font-size: 2rem;
-    margin: 0 0 1rem;
-  }
-  .note {
-    font-size: 2.5rem;
-    line-height: 1.3;
-    margin: 3.5rem 0;
-  }
-  .textBlock {
-    display: flex;
-    justify-content: space-between;
-
     p {
-      font-size: 1.25rem;
-      line-height: 1.5;
-      letter-spacing: 1px;
-      margin: 0 0 1rem;
+        margin: .5rem 0;
+        line-height: 1.3;
+        letter-spacing: .5px;
+
+        + h4 {
+            margin-top: 2.5rem;
+        }
     }
 
     ul {
-      font-size: 1.25rem;
-      line-height: 1.5;
-      letter-spacing: 1px;
-    }
-  }
-  .textBlock__left {
-    flex-basis: 48%;
-  }
-  .textBlock__right {
-    flex-basis: 48%;
-  }
-  .footer {
-    padding: 0 2.5rem 2rem;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    max-width: 1200px;
-    margin: 8rem auto 0;
+        margin: .5rem 0;
+        line-height: 1.3;
+        letter-spacing: .5px;
 
-    .content {
-      display: flex;
-      flex-direction: column;
-      flex-basis: calc(100% - 20rem);
+        + h4 {
+            margin-top: 2.5rem;
+        }
     }
-  }
-  .footer__text {
-    font-size: 1.4rem;
-  }
-  .footer::before {
-    position: static;
-    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
-    transform: none;
-    width: 180px;
-    height: 90px;
-    flex-basis: 180px;
-    flex-shrink: 0;
-    margin-right: 3.5rem;
-  }
-  .copyright {
-    text-align: left;
-    font-size: 1.7rem;
-    margin: 0 0 1.5rem;
-  }
-  .payment__item {
-    width: 45%;
-    flex-basis: 45%;
-    text-align: left;
-  }
-  .offers__content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  .offers__item {
-    max-width: 750px;
-    padding: 0 1rem 1rem;
+}
 
-    &:not(:last-child) {
-      margin-bottom: 2rem;
+@media screen and(min-width: 460px) {
+    html {
+        font-size: 12px;
     }
-  }
-  .offers__logo {
-    flex-basis: 14rem;
-    flex-shrink: 0;
-    padding: 0 1rem;
+    .offers__column {
+        padding: 0 2rem;
+    }
+    .offers__list {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .offers__item {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 
-    img {
-      max-height: 100%;
+@media screen and(min-width: 600px) {
+    html {
+        font-size: 13px;
     }
-  }
-  .offers__title {
-    font-size: 1.4rem;
-  }
-  .offers__limit {
-    display: block;
-    text-align: center;
-  }
-  .offers__limit-item {
-    font-size: 1.4rem;
-    color: $black;
+    .payment__item {
+        width: 30%;
+        flex-basis: 30%;
+    }
+}
 
-    &:first-child {
-      margin-right: 0;
+@media screen and(min-width: 768px) {
+    html {
+        font-size: 10px;
     }
+    body {
+        font-size: 1.55rem;
+        background: $white;
+    }
+    h1 {
+        font-size: 4rem;
+        //Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+        text-shadow: 2px 2px 10px $black_50;
+    }
+    h1::before {
+        height: 7rem;
+        margin-bottom: 1.5rem;
+    }
+    h2 {
+        font-size: 14px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        position: relative;
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
 
-    strong {
-      font-size: 1.7rem;
+        .inner-text {
+            display: inline-block;
+            vertical-align: top;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            white-space: nowrap;
+            font-size: 2em;
+        }
     }
-  }
-  .offers__column {
-    padding: 0 1rem;
-    margin-bottom: 0;
+    h2::after {
+        content: "";
+        display: inline-block;
+        width: 8rem;
+        height: 4rem;
+        background-size: contain;
+    }
+    h2::before {
+        content: "";
+        display: inline-block;
+        width: 8rem;
+        height: 4rem;
+        background-size: contain;
+    }
+    h3 {
+        font-size: 3.2rem;
+        margin: 3rem 0 4rem;
 
-    &:last-child {
-      width: 100%;
-      flex-basis: 100%;
-      text-align: center;
+        .icon {
+            margin-right: 1rem;
+        }
     }
-  }
-  .offers__list {
-    width: 27rem;
-    flex-basis: 27rem;
-    flex-shrink: 0;
-  }
-  .offers__list-value {
-    font-weight: 600;
-    color: $black;
-  }
-  .mobile-hidden.payment {
-    display: flex;
-  }
-  .offers .button {
-    margin-top: 1rem;
-    height: 45px;
-  }
+    .offers__top {
+        height: 2.5rem;
+    }
+    h4 {
+        font-size: 2rem;
+        margin: 0 0 1rem;
+    }
+    .note {
+        font-size: 2.5rem;
+        line-height: 1.3;
+        margin: 3.5rem 0;
+    }
+    .textBlock {
+        display: flex;
+        justify-content: space-between;
+
+        p {
+            font-size: 1.25rem;
+            line-height: 1.5;
+            letter-spacing: 1px;
+            margin: 0 0 1rem;
+        }
+
+        ul {
+            font-size: 1.25rem;
+            line-height: 1.5;
+            letter-spacing: 1px;
+        }
+    }
+    .textBlock__left {
+        flex-basis: 48%;
+    }
+    .textBlock__right {
+        flex-basis: 48%;
+    }
+    .footer {
+        padding: 0 2.5rem 2rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        max-width: 1200px;
+        margin: 8rem auto 0;
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            flex-basis: calc(100% - 20rem);
+        }
+    }
+    .footer__text {
+        font-size: 1.4rem;
+    }
+    .footer::before {
+        position: static;
+        //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+        transform: none;
+        width: 180px;
+        height: 90px;
+        flex-basis: 180px;
+        flex-shrink: 0;
+        margin-right: 3.5rem;
+    }
+    .copyright {
+        text-align: left;
+        font-size: 1.7rem;
+        margin: 0 0 1.5rem;
+    }
+    .payment__item {
+        width: 45%;
+        flex-basis: 45%;
+        text-align: left;
+    }
+    .offers__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .offers__item {
+        max-width: 750px;
+        padding: 0 1rem 1rem;
+
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    }
+    .offers__logo {
+        flex-basis: 14rem;
+        flex-shrink: 0;
+        padding: 0 1rem;
+
+        img {
+            max-height: 100%;
+        }
+    }
+    .offers__title {
+        font-size: 1.4rem;
+    }
+    .offers__limit {
+        display: block;
+        text-align: center;
+    }
+    .offers__limit-item {
+        font-size: 1.4rem;
+        color: $black;
+
+        &:first-child {
+            margin-right: 0;
+        }
+
+        strong {
+            font-size: 1.7rem;
+        }
+    }
+    .offers__column {
+        padding: 0 1rem;
+        margin-bottom: 0;
+
+        &:last-child {
+            width: 100%;
+            flex-basis: 100%;
+            text-align: center;
+        }
+    }
+    .offers__list {
+        width: 27rem;
+        flex-basis: 27rem;
+        flex-shrink: 0;
+    }
+    .offers__list-value {
+        font-weight: 600;
+        color: $black;
+    }
+    .mobile-hidden.payment {
+        display: flex;
+    }
+    .offers .button {
+        margin-top: 1rem;
+        height: 45px;
+    }
 }
 
 @media screen and(min-width: 950px) {
-  .payment__item {
-    width: 30%;
-    flex-basis: 33%;
-    margin-bottom: 3rem;
-  }
-  h1 {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 9.5rem;
-    //Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-    text-shadow: 2px 2px 10px $black_50;
-  }
-  h1::before {
-    display: inline-block;
-    width: 15rem;
-    margin: 0 2rem 0 0;
-  }
-  h1::after {
-    content: "";
-    display: inline-block;
-    width: 15rem;
-    height: 7rem;
-    background-size: contain;
-    margin-left: 2rem;
-  }
-  h3 {
-    margin: 6rem 0;
-  }
-  .note {
-    max-width: 85rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .footer__text {
-    max-width: 72rem;
-  }
-  .header .content {
-    max-width: 1150px;
-  }
-  .footer .content {
-    margin-left: 0;
-  }
+    .payment__item {
+        width: 30%;
+        flex-basis: 33%;
+        margin-bottom: 3rem;
+    }
+    h1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 9.5rem;
+        //Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+        text-shadow: 2px 2px 10px $black_50;
+    }
+    h1::before {
+        display: inline-block;
+        width: 15rem;
+        margin: 0 2rem 0 0;
+    }
+    h1::after {
+        content: "";
+        display: inline-block;
+        width: 15rem;
+        height: 7rem;
+        background-size: contain;
+        margin-left: 2rem;
+    }
+    h3 {
+        margin: 6rem 0;
+    }
+    .note {
+        max-width: 85rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer__text {
+        max-width: 72rem;
+    }
+    .header .content {
+        max-width: 1150px;
+    }
+    .footer .content {
+        margin-left: 0;
+    }
 }
 
 @media screen and(min-width: 1100px) {
-  h1 {
-    font-size: 4.7rem;
-    //Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-    text-shadow: 2px 2px 10px $black_50;
-  }
-  h1::after {
-    width: 15rem;
-    flex-basis: 10rem;
-    height: 7rem;
-  }
-  h1::before {
-    width: 15rem;
-    flex-basis: 10rem;
-    height: 7rem;
-  }
-  .content {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .offers__item {
-    max-width: 94rem;
-    padding: 0;
-  }
-  .offers__content {
-    flex-wrap: nowrap;
-    padding: 1.5rem 1.5rem 2rem;
-  }
-  .offers__logo {
-    padding-left: 0;
-    align-items: center;
-  }
-  .payment__item {
-    width: 25%;
-    flex-basis: 25%;
-    margin-bottom: 4rem;
-    text-align: center;
-
-    &:first-child {
-      text-align: left;
+    h1 {
+        font-size: 4.7rem;
+        //Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+        text-shadow: 2px 2px 10px $black_50;
     }
-
-    &:nth-child(5) {
-      text-align: left;
+    h1::after {
+        width: 15rem;
+        flex-basis: 10rem;
+        height: 7rem;
     }
-  }
-  .offers .button {
-    margin-top: 0;
-    margin-bottom: 0;
-    height: 54px;
-    width: 100%;
-    flex-basis: 100%;
-
-    + .offers__title {
-      margin-bottom: 0;
+    h1::before {
+        width: 15rem;
+        flex-basis: 10rem;
+        height: 7rem;
     }
-  }
-  .offers__column:last-child {
-    width: 18rem;
-    flex-basis: 18rem;
-    flex-grow: 0;
-  }
+    .content {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .offers__item {
+        max-width: 94rem;
+        padding: 0;
+    }
+    .offers__content {
+        flex-wrap: nowrap;
+        padding: 1.5rem 1.5rem 2rem;
+    }
+    .offers__logo {
+        padding-left: 0;
+        align-items: center;
+    }
+    .payment__item {
+        width: 25%;
+        flex-basis: 25%;
+        margin-bottom: 4rem;
+        text-align: center;
+
+        &:first-child {
+            text-align: left;
+        }
+
+        &:nth-child(5) {
+            text-align: left;
+        }
+    }
+    .offers .button {
+        margin-top: 0;
+        margin-bottom: 0;
+        height: 54px;
+        width: 100%;
+        flex-basis: 100%;
+
+        + .offers__title {
+            margin-bottom: 0;
+        }
+    }
+    .offers__column:last-child {
+        width: 18rem;
+        flex-basis: 18rem;
+        flex-grow: 0;
+    }
 }
 
 @media all and(orientation: landscape) and(max-width: 812px) {
-  .offer_wrap {
-    display: inline-block;
-    width: 49%;
-    text-align: center;
-    text-decoration: none;
-    vertical-align: middle;
-    margin: 5px auto 0 auto;
-  }
-  h2 .inner-text {
-    display: block;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: $color_gravel_approx;
-    font-weight: 500;
-    font-size: 1.5em;
-  }
+    .offer_wrap {
+        display: inline-block;
+        width: 49%;
+        text-align: center;
+        text-decoration: none;
+        vertical-align: middle;
+        margin: 5px auto 0 auto;
+    }
+    h2 .inner-text {
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $color_gravel_approx;
+        font-weight: 500;
+        font-size: 1.5em;
+    }
 }
 
 .oimg {
-  height: 3.5em;
+    height: 3.5em;
 }
 
 .notificate-wrapper {
-  bottom: 15px;
-  right: 15px;
-  position: fixed;
+    bottom: 15px;
+    right: 15px;
+    position: fixed;
 }
 
 .notice-block {
-  color: $black;
-  display: none;
-  position: relative;
-  padding: 20px;
-  overflow: hidden;
-  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
-  border-radius: 10px;
-  border: 1px solid $color_celeste_approx;
-  background: $white;
-  margin-top: 15px;
-  z-index: 9999;
-  //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-  box-shadow: 1px 1px 10px 0 $mine_shaft_75;
+    color: $black;
+    display: none;
+    position: relative;
+    padding: 20px;
+    overflow: hidden;
+    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+    border-radius: 10px;
+    border: 1px solid $color_celeste_approx;
+    background: $white;
+    margin-top: 15px;
+    z-index: 9999;
+    //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+    box-shadow: 1px 1px 10px 0 $mine_shaft_75;
 
-  > a {
-    text-decoration: none;
-    color: $black !important;
-  }
+    > a {
+        text-decoration: none;
+        color: $black !important;
+    }
 }
 
 .notice-data {
-  display: inline-block;
-  vertical-align: top;
-  padding-left: 15px;
-  width: 250px;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 15px;
+    width: 250px;
 }
 
 .notice-image {
-  display: inline-block;
-  vertical-align: top;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .notice-title {
-  font-size: 16px;
-  font-weight: 700;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .notice-close {
-  background: $url_0;
-  background-size: 24px;
-  height: 24px;
-  width: 24px;
-  position: absolute;
-  top: 7px;
-  right: 7px;
-  font-size: 12px;
-  cursor: pointer;
-  color: $color_mountain_mist_approx;
-  text-decoration: underline;
+    background: $url_0;
+    background-size: 24px;
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    font-size: 12px;
+    cursor: pointer;
+    color: $color_mountain_mist_approx;
+    text-decoration: underline;
 }
 
 @media(max-width: 480px) {
-  .notificate-wrapper {
-    left: 15px;
-    text-align: center;
-  }
-  .notice-image {
-    float: none;
-  }
-  .notice-data {
-    padding-left: 0;
-    display: block;
-    width: auto;
-  }
+    .notificate-wrapper {
+        left: 15px;
+        text-align: center;
+    }
+    .notice-image {
+        float: none;
+    }
+    .notice-data {
+        padding-left: 0;
+        display: block;
+        width: auto;
+    }
 }
 
 .toast-title {
-  font-weight: 700;
+    font-weight: 700;
 }
 
 .toast-message {
-  word-wrap: break-word;
+    word-wrap: break-word;
 
-  a {
-    color: $white;
+    a {
+        color: $white;
 
-    &:hover {
-      color: $color_celeste_approx;
-      text-decoration: none;
+        &:hover {
+            color: $color_celeste_approx;
+            text-decoration: none;
+        }
     }
-  }
 
-  label {
-    color: $white;
-  }
+    label {
+        color: $white;
+    }
 }
 
 .toast-close-button {
-  position: relative;
-  right: -.3em;
-  top: -.3em;
-  float: right;
-  font-size: 20px;
-  font-weight: 700;
-  color: $white;
-  //Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-  text-shadow: 0 1px 0 $white;
-  opacity: .8;
-  filter: alpha(opacity=80);
-  line-height: 1;
-
-  &:focus {
-    color: $black;
-    text-decoration: none;
-    cursor: pointer;
-    opacity: .4;
-    filter: alpha(opacity=40);
-  }
-
-  &:hover {
-    color: $black;
-    text-decoration: none;
-    cursor: pointer;
-    opacity: .4;
-    filter: alpha(opacity=40);
-  }
-}
-
-.toast-top-center {
-  top: 0;
-  right: 0;
-  width: 100%;
-}
-
-.toast-bottom-center {
-  bottom: 0;
-  right: 0;
-  width: 100%;
-}
-
-.toast-top-full-width {
-  top: 0;
-  right: 0;
-  width: 100%;
-}
-
-.toast-bottom-full-width {
-  bottom: 0;
-  right: 0;
-  width: 100%;
-}
-
-.toast-top-left {
-  top: 12px;
-  left: 12px;
-}
-
-.toast-top-right {
-  top: 12px;
-  right: 12px;
-}
-
-.toast-bottom-right {
-  right: 12px;
-  bottom: 12px;
-}
-
-.toast-bottom-left {
-  bottom: 12px;
-  left: 12px;
-}
-
-#toast-container {
-  position: fixed;
-  z-index: 999999;
-  pointer-events: none;
-
-  * {
-    //Instead of the line below you could use @include box-sizing($bs)
-    box-sizing: border-box;
-  }
-
-  > div {
     position: relative;
-    pointer-events: auto;
-    overflow: hidden;
-    margin: 0 0 6px;
-    padding: 15px 15px 15px 50px;
-    width: 300px;
-    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
-    border-radius: 3px;
-    background-position: 15px center;
-    background-repeat: no-repeat;
-    //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-    box-shadow: 0 0 12px $color_mountain_mist_approx;
+    right: -.3em;
+    top: -.3em;
+    float: right;
+    font-size: 20px;
+    font-weight: 700;
     color: $white;
+    //Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+    text-shadow: 0 1px 0 $white;
     opacity: .8;
     filter: alpha(opacity=80);
-    opacity: .9;
+    line-height: 1;
 
-    &.rtl {
-      direction: rtl;
-      padding: 15px 50px 15px 15px;
-      background-position: right 15px center;
+    &:focus {
+        color: $black;
+        text-decoration: none;
+        cursor: pointer;
+        opacity: .4;
+        filter: alpha(opacity=40);
     }
 
     &:hover {
-      //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-      box-shadow: 0 0 12px $black;
-      opacity: 1;
-      filter: alpha(opacity=100);
-      cursor: pointer;
+        color: $black;
+        text-decoration: none;
+        cursor: pointer;
+        opacity: .4;
+        filter: alpha(opacity=40);
     }
-  }
+}
 
-  > {
-    .toast-info {
-      background-image: $url_1 !important;
+.toast-top-center {
+    top: 0;
+    right: 0;
+    width: 100%;
+}
+
+.toast-bottom-center {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+
+.toast-top-full-width {
+    top: 0;
+    right: 0;
+    width: 100%;
+}
+
+.toast-bottom-full-width {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+
+.toast-top-left {
+    top: 12px;
+    left: 12px;
+}
+
+.toast-top-right {
+    top: 12px;
+    right: 12px;
+}
+
+.toast-bottom-right {
+    right: 12px;
+    bottom: 12px;
+}
+
+.toast-bottom-left {
+    bottom: 12px;
+    left: 12px;
+}
+
+#toast-container {
+    position: fixed;
+    z-index: 999999;
+    pointer-events: none;
+
+    * {
+        //Instead of the line below you could use @include box-sizing($bs)
+        box-sizing: border-box;
     }
 
-    .toast-error {
-      background-image: $url_2 !important;
+    > div {
+        position: relative;
+        pointer-events: auto;
+        overflow: hidden;
+        margin: 0 0 6px;
+        padding: 15px 15px 15px 50px;
+        width: 300px;
+        //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+        border-radius: 3px;
+        background-position: 15px center;
+        background-repeat: no-repeat;
+        //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+        box-shadow: 0 0 12px $color_mountain_mist_approx;
+        color: $white;
+        opacity: .8;
+        filter: alpha(opacity=80);
+        opacity: .9;
+
+        &.rtl {
+            direction: rtl;
+            padding: 15px 50px 15px 15px;
+            background-position: right 15px center;
+        }
+
+        &:hover {
+            //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+            box-shadow: 0 0 12px $black;
+            opacity: 1;
+            filter: alpha(opacity=100);
+            cursor: pointer;
+        }
     }
 
-    .toast-success {
-      background-image: $url_3 !important;
+    > {
+        .toast-info {
+            background-image: $url_1 !important;
+        }
+
+        .toast-error {
+            background-image: $url_2 !important;
+        }
+
+        .toast-success {
+            background-image: $url_3 !important;
+        }
+
+        .toast-warning {
+            background-image: $url_4 !important;
+        }
     }
 
-    .toast-warning {
-      background-image: $url_4 !important;
+    &.toast-bottom-center > div {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
     }
-  }
 
-  &.toast-bottom-center > div {
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+    &.toast-top-center > div {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-  &.toast-top-center > div {
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+    &.toast-bottom-full-width > div {
+        width: 96%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-  &.toast-bottom-full-width > div {
-    width: 96%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  &.toast-top-full-width > div {
-    width: 96%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+    &.toast-top-full-width > div {
+        width: 96%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .toast {
-  background-color: $color_black_approx;
+    background-color: $color_black_approx;
 }
 
 .toast-success {
-  background-color: #2e9cdcfa;
+    background-color: #2e9cdcfa;
 }
 
 .toast-error {
-  background-color: $color_well_read_approx;
+    background-color: $color_well_read_approx;
 }
 
 .toast-info {
-  background-color: $color_boston_blue_approx;
+    background-color: $color_boston_blue_approx;
 }
 
 .toast-warning {
-  background-color: $color_pizazz_approx;
+    background-color: $color_pizazz_approx;
 }
 
 .toast-progress {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 4px;
-  background-color: $black;
-  opacity: .4;
-  filter: alpha(opacity=40);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    background-color: $black;
+    opacity: .4;
+    filter: alpha(opacity=40);
 }
 
 @media all and(max-width: 240px) {
-  #toast-container {
-    > div {
-      padding: 8px 8px 8px 50px;
-      width: 11em;
+    #toast-container {
+        > div {
+            padding: 8px 8px 8px 50px;
+            width: 11em;
 
-      &.rtl {
-        padding: 8px 50px 8px 8px;
-      }
-    }
+            &.rtl {
+                padding: 8px 50px 8px 8px;
+            }
+        }
 
-    .toast-close-button {
-      right: -.2em;
-      top: -.2em;
-    }
+        .toast-close-button {
+            right: -.2em;
+            top: -.2em;
+        }
 
-    .rtl .toast-close-button {
-      left: -.2em;
-      right: .2em;
+        .rtl .toast-close-button {
+            left: -.2em;
+            right: .2em;
+        }
     }
-  }
 }
 
 @media all and(min-width: 241px) and(max-width: 480px) {
-  #toast-container {
-    > div {
-      padding: 8px 8px 8px 50px;
-      width: 18em;
+    #toast-container {
+        > div {
+            padding: 8px 8px 8px 50px;
+            width: 18em;
 
-      &.rtl {
-        padding: 8px 50px 8px 8px;
-      }
-    }
+            &.rtl {
+                padding: 8px 50px 8px 8px;
+            }
+        }
 
-    .toast-close-button {
-      right: -.2em;
-      top: -.2em;
-    }
+        .toast-close-button {
+            right: -.2em;
+            top: -.2em;
+        }
 
-    .rtl .toast-close-button {
-      left: -.2em;
-      right: .2em;
+        .rtl .toast-close-button {
+            left: -.2em;
+            right: .2em;
+        }
     }
-  }
 }
 
 @media all and(min-width: 481px) and(max-width: 768px) {
-  #toast-container > div {
-    padding: 15px 15px 15px 50px;
-    width: 25em;
+    #toast-container > div {
+        padding: 15px 15px 15px 50px;
+        width: 25em;
 
-    &.rtl {
-      padding: 15px 50px 15px 15px;
+        &.rtl {
+            padding: 15px 50px 15px 15px;
+        }
     }
-  }
 }
 
 svg:not(:root) {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 [type=reset]:-moz-focusring {
-  outline: 1px dotted ButtonText;
+    outline: 1px dotted ButtonText;
 }
 
 [type=submit]:-moz-focusring {
-  outline: 1px dotted ButtonText;
+    outline: 1px dotted ButtonText;
 }
 
 [type=button]:-moz-focusring {
-  outline: 1px dotted ButtonText;
+    outline: 1px dotted ButtonText;
 }
 
 h2 .inner-text {
-  display: block;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  padding: .9rem 2rem 1.2rem;
-  color: $color_gravel_approx;
-  font-weight: 500;
-  font-size: 2em;
+    display: block;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: .9rem 2rem 1.2rem;
+    color: $color_gravel_approx;
+    font-weight: 500;
+    font-size: 2em;
 }
 
 .offers .button + .offers__title {
-  font-size: 1.4rem;
+    font-size: 1.4rem;
 }
 
 .rtl .toast-close-button {
-  left: -.3em;
-  float: left;
-  right: .3em;
+    left: -.3em;
+    float: left;
+    right: .3em;
 }
 
 @media(max-width: 460px) {

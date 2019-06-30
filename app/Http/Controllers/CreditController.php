@@ -18,7 +18,13 @@ class CreditController extends Controller
     {
         $models = Bank::all()->sortBy('position');
 
-        return view('credit.index', ['models' => $models]);
+        $model = array_rand($models);
+        $model = $model[0] ?? null;
+
+        return view('credit.index', [
+            'model' => $model,
+            'models' => $models
+        ]);
     }
 
     /**
