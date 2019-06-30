@@ -183,10 +183,8 @@
 <div class="footer__wrap">
     <footer class="footer">
         <div class="content">
-            <div class="footer__text">Ресурс не является финансовым учреждением, банком или кредитором, и не несёт
-                ответственности за любые заключенные договоры или условия. Все материалы, размещенные на сайте имееют
-                информационный характер. Условия выдачи займов (кредитов)
-                уточняйте на сайте МФО или банка.
+            <div class="footer__text">
+                <?= setting('credit.footer_text') ?>
             </div>
             <div class="footer__link">
                 <a href="https://play.google.com/store/apps/details?id=com.finapps.toploansatstakeinukraine" target="_blank">
