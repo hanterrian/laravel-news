@@ -23,8 +23,17 @@
     <meta name="description" content="Взять в займ онлайн. Взять займ на карту быстро. Взять займ без отказа.">
     <link rel="icon" href="/bank2/assets/rz/favicon.png" type="image/png">
     <link rel="stylesheet" href="/bank2/css/style.css">
-    <link rel="stylesheet" href="/bank2/css/jquery.smartbanner.css">
     <link rel="manifest" href="/manifest.json">
+
+    @if(setting('app.enable'))
+        <meta name="apple-itunes-app" content="app-id=54400766423232324">
+        <meta name="google-play-app" content="app-id=com.finapps.toploansatstakeinukraine">
+
+        <link rel="apple-touch-icon" href="{{ asset('smartbanner/smart-app-banner.png') }}">
+        <link rel="android-touch-icon" href="{{ asset('smartbanner/smart-app-banner.png') }}"/>
+
+        <link rel="stylesheet" href="{{ asset('smartbanner/smart-app-banner.css') }}">
+    @endif
 </head>
 <body>
 <h1 class="vishi">Взять займ</h1>
@@ -1051,6 +1060,30 @@
     </footer>
 </div>
 
+@if(setting('app.enable'))
+    <script src="{{ asset('smartbanner/smart-app-banner.js') }}"></script>
+    <script>
+        new SmartBanner({
+            daysHidden: 15,
+            daysReminder: 90,
+            appStoreLanguage: 'us',
+            title: '{{ setting('app.banner_title') }}',
+            author: 'Cijworld',
+            button: 'Установить',
+            store: {
+                ios: '{{ setting('app.app_store_title') }}',
+                android: '{{ setting('app.app_google_title') }}',
+            },
+            price: {
+                ios: 'FREE',
+                android: 'FREE',
+                windows: 'FREE'
+            },
+            icon: '/smartbanner/smart-app-banner.png'
+        });
+    </script>
+@endif
+
 <script src="//static-login.sendpulse.com/apps/fc3/build/loader.js" sp-form-id="e234babc40a090b9ecdbce4c68c59bd76f2a0c3809d51bd2a03e753201cf2f6c"></script>
 <script>!function (e, t, d, s, a, n, c) {
         e[a] = {}, e[a].date = (new Date).getTime(), n = t.createElement(d), c = t.getElementsByTagName(d)[0], n.type = "text/javascript", n.async = !0, n.src = s, c.parentNode.insertBefore(n, c)
@@ -1086,26 +1119,6 @@
 </script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-<script src="/js/bank2/jquery.smartbanner.js"></script>
-<script>
-    $(function () {
-        $.smartbanner({
-            title: 'Деньги на карту',
-            price: 'от 0%',
-            appStoreLanguage: 'us',
-            inAppStore: 'Title',
-            inGooglePlay: 'top займы',
-            button: 'Установить',
-            scale: 'auto',
-            speedIn: 300,
-            speedOut: 400,
-            daysHidden: 15,
-            daysReminder: 90,
-            appendToSelector: 'body',
-        });
-    });
-</script>
 
 <script>!function (e) {
         e(["jquery"], function (e) {
