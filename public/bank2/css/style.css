@@ -1416,25 +1416,9 @@ h2 .inner-text {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    height: 4rem;
-    margin-bottom: 1.3rem;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
   }
 
   #cr_p5 {
-    border-radius: 5px;
-    border: 2px solid #2e9cdcfa;
-    color: #303030;
-    float: left;
-    font-size: 14px;
-    line-height: 14px;
-    width: 80%;
-    margin: 9px 10% 0;
-    text-transform: uppercase;
-    padding: 10px 0;
     border-radius: 5px;
     border: 2px solid #2e9cdcfa;
     color: #303030;
@@ -1449,20 +1433,16 @@ h2 .inner-text {
 
   #cr_block_new {
     padding-bottom: 10px;
-    padding-bottom: 10px;
   }
 
   h2 {
     margin: 4px;
-    margin: 4px;
   }
   h2 .inner-text {
-    font-size: 1.1em;
     font-size: 1.1em;
   }
 
   .parallelogram span {
-    font-size: 12px;
     font-size: 12px;
   }
 }
