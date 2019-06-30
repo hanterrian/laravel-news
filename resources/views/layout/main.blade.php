@@ -16,8 +16,8 @@
         <meta name="apple-itunes-app" content="app-id=54400766423232324">
         <meta name="google-play-app" content="app-id=com.finapps.toploansatstakeinukraine">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link rel="android-touch-icon" href="android-icon.png"/>
+        <link rel="apple-touch-icon" href="{{ asset('smartbanner/smart-app-banner.png') }}">
+        <link rel="android-touch-icon" href="{{ asset('smartbanner/smart-app-banner.png') }}"/>
 
         <link rel="stylesheet" href="{{ asset('smartbanner/smart-app-banner.css') }}">
     @endif
