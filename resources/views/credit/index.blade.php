@@ -114,7 +114,7 @@
                                     @endif
 
                                     @if($model->rate)
-                                        <div id="cr_p_new">
+                                        <div id="cr_p_new2">
                                             <strong>{{ $model->rate }}% на первый</strong>
                                         </div>
                                     @endif
@@ -125,7 +125,7 @@
                                             лет
                                         </div>
                                     @endif
-                                    <div id="cr_p_new">
+                                    <div id="cr_p_new2">
                                         <div class="counter"></div>
                                     </div>
                                     <div id="cr_p5">Получить займ</div>
