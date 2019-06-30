@@ -8,12 +8,6 @@
 @media (max-width: 460px) {
   .offer_wrap {
     display: inline-block;
-    width: 50%;
-    text-align: center;
-    text-decoration: none;
-    vertical-align: middle;
-    margin: 5px auto 0 auto;
-    display: inline-block;
     width: 49%;
     text-align: center;
     text-decoration: none;
