@@ -237,6 +237,9 @@
                 информационный характер. Условия выдачи займов (кредитов)
                 уточняйте на сайте МФО или банка.
             </div>
+            <div class="footer__text footer__link">
+                <a href="{{ url('/page/privacy-policy') }}" target="_blank">Политика конфиденциальности</a>
+            </div>
             <div class="copyright">&copy; cjiworld.com.</div>
         </div>
     </footer>
