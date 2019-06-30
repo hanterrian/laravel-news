@@ -34,6 +34,8 @@
 
         <link rel="stylesheet" href="{{ asset('smartbanner/smart-app-banner2.css') }}">
     @endif
+
+    <?= setting('credit.after_header') ?>
 </head>
 <body>
 <h1 class="vishi">Взять займ</h1>
@@ -831,5 +833,7 @@
         }
     });
 </script>
+
+<?= setting('credit.after_body') ?>
 </body>
 </html>
