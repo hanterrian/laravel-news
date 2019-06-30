@@ -710,6 +710,17 @@ ul {
     height: 46px;
 }
 
+.offer_mark {
+    position: absolute;
+    display: block;
+    top: -10px;
+    left: -10px;
+}
+
+.offer_mark .like {
+    margin: 10px 0 0 10px;
+}
+
 .footer {
     color: $white;
     padding: 7.5rem 0 2rem;
