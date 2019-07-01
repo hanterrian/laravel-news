@@ -99,14 +99,17 @@
                             <div class="offers__logo">
                                 <img src="{{ Voyager::image($model->logo) }}" alt="Быстрая выдача" class="oimg"/>
                             </div>
-                            <div class="parallelogram__wrapper">
-                                <div class="parallelogram">
-                                    <span>Быстрая выдача</span>
+
+                            @if($model->description)
+                                <div class="parallelogram__wrapper">
+                                    @foreach(explode('|', $model->description) as $description)
+                                        <div class="parallelogram">
+                                            <span>{{ $description }}</span>
+                                        </div>
+                                    @endforeach
                                 </div>
-                                <div class="parallelogram">
-                                    <span>Быстрая выдача</span>
-                                </div>
-                            </div>
+                            @endif
+                            
                             <div id="cr_cont">
                                 <div id="cr_stb">
                                     @if($model->sum)
