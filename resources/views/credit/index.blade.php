@@ -95,7 +95,7 @@
             @foreach($models as $model)
                 <a class="offer_wrap offer_link" target="_blank" href="{{ $model->link_to_site }}" data-oid="10">
                     <div class="link_offers">
-                        <div id="cr_block_new-{{ $model->id }}">
+                        <div id="cr_block_new">
                             <div class="offers__logo">
                                 <img src="{{ Voyager::image($model->logo) }}" alt="Быстрая выдача" class="oimg"/>
                             </div>
@@ -103,18 +103,21 @@
                                 <div class="parallelogram">
                                     <span>Быстрая выдача</span>
                                 </div>
+                                <div class="parallelogram">
+                                    <span>Быстрая выдача</span>
+                                </div>
                             </div>
                             <div id="cr_cont">
                                 <div id="cr_stb">
                                     @if($model->sum)
-                                        <div id="cr_p_new2">до
+                                        <div id="cr_p_new2">
                                             <strong>{{ $model->sum }}</strong>
                                             грн.
                                         </div>
                                     @endif
 
                                     @if($model->rate)
-                                        <div id="cr_p_new2">
+                                        <div id="cr_p_new">
                                             <strong>{{ $model->rate }}% на первый</strong>
                                         </div>
                                     @endif
@@ -125,7 +128,7 @@
                                             лет
                                         </div>
                                     @endif
-                                    <div id="cr_p_new2">
+                                    <div id="cr_p_new">
                                         <div class="counter"></div>
                                     </div>
                                     <div id="cr_p5">Получить займ</div>
@@ -174,7 +177,7 @@
             <div class="footer__link">
                 <a href="{{ url('/page/privacy-policy') }}" target="_blank">Политика конфиденциальности</a>
             </div>
-            <div class="copyright">&copy; cjiworld.com.</div>
+            <div class="copyright">&copy; credit.cjiworld.com.</div>
         </div>
     </footer>
 </div>
