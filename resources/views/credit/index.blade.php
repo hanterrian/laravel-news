@@ -97,6 +97,7 @@
             @foreach($models as $model)
                 <a class="offer_wrap offer_link" target="_blank" href="{{ $model->link_to_site }}" data-oid="10">
                     <div class="link_offers">
+                        @if(false)
                         <div class="offer_mark">
                             @switch($model->mark)
                                 @case(1)
@@ -116,7 +117,8 @@
                                 @break
                             @endswitch
                         </div>
-                        
+                        @endif
+
                         <div id="cr_block_new">
                             <div class="offers__logo">
                                 <img src="{{ Voyager::image($model->logo) }}" alt="Быстрая выдача" class="oimg"/>
