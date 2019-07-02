@@ -70,7 +70,7 @@
                 </div>
                 <div class="notice-data">
                     <div class="notice-title">Займ за 9 минут!</div>
-                    <div class="notice-text">до {{ $model->sum }} грн онлайн
+                    <div class="notice-text">{{ $model->sum }} грн онлайн
                         <br>
                         одобрение автоматически
                         <br>
@@ -109,7 +109,7 @@
                                     @endforeach
                                 </div>
                             @endif
-                            
+
                             <div id="cr_cont">
                                 <div id="cr_stb">
                                     @if($model->sum)
@@ -121,14 +121,22 @@
 
                                     @if($model->rate)
                                         <div id="cr_p_new">
-                                            <strong>{{ $model->rate }}% на первый</strong>
+                                            <strong>от {{ $model->rate }}% в день</strong>
                                         </div>
                                     @endif
 
                                     @if($model->term_from || $model->term_to)
-                                        <div id="cr_p_new2">от
-                                            <strong>{{ $model->term_from }}</strong>
-                                            лет
+                                        <div id="cr_p_new2">
+                                            @if($model->term_from)
+                                                от
+                                                <strong> {{ $model->term_from }}</strong>
+                                            @endif
+
+                                            @if($model->term_to)
+                                                до
+                                                <strong> {{ $model->term_to }}</strong>
+                                            @endif
+                                            дней
                                         </div>
                                     @endif
                                     <div id="cr_p_new">
