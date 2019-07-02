@@ -71,8 +71,10 @@
                 <div class="notice-data">
                     <div class="notice-title">Займ за 9 минут!</div>
                     <div class="notice-text">{{ $model->sum }} грн онлайн
-                        <br>
-                        одобрение автоматически
+                        @foreach(explode('|', $model->description) as $description)
+                            <br>
+                            {{ $description }}
+                        @endforeach
                         <br>
                         <u>Получить займ</u>
                     </div>
