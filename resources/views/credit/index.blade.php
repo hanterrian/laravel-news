@@ -85,14 +85,13 @@
 @endif
 
 <section class="wrapper">
-    <center>
-        <p class="topp">Получите лучшие условия займа и увеличте % одобрения отправляя 4-5 заявок!</p>
-    </center>
     <div class="content">
         <h2>
-            <!-- 				<span class="inner-text">Взять займ</span> -->
             <span class="inner-text">Займы от 0% на карту</span>
         </h2>
+        <center>
+            <p class="topp">Получите лучшие условия займа и увеличте % одобрения отправляя 4-5 заявок!</p>
+        </center>
         <div id="spisok1" class="offers">
             @foreach($models as $model)
                 <a class="offer_wrap offer_link" target="_blank" href="{{ $model->link_to_site }}" data-oid="10">
