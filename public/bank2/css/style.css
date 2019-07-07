@@ -665,6 +665,9 @@ ul {
   text-align: center;
   margin: 0 auto;
 }
+.content .header-logo-big img {
+  max-width: 80px;
+}
 
 .footer::before {
   content: "";
@@ -1484,6 +1487,10 @@ h2 .inner-text {
 
   .parallelogram span {
     font-size: 12px;
+  }
+
+  .content .header-logo-big img {
+    max-width: 30%;
   }
 }
 

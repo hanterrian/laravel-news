@@ -758,6 +758,10 @@ ul {
     .header-logo-big {
         text-align: center;
         margin: 0 auto;
+
+        img {
+            max-width: 80px;
+        }
     }
 }
 
@@ -1599,5 +1603,13 @@ h2 .inner-text {
     }
     .parallelogram span {
         font-size: 12px;
+    }
+
+    .content {
+        .header-logo-big {
+            img {
+                max-width: 30%;
+            }
+        }
     }
 }
