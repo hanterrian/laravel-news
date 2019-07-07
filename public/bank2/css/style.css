@@ -704,6 +704,10 @@ ul {
   margin-top: 2.5rem;
 }
 
+.center-text.after-h2 {
+  text-align: center;
+}
+
 @media screen and (min-width: 460px) {
   html {
     font-size: 12px;
