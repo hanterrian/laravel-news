@@ -661,6 +661,11 @@ ul {
   color: #ffffff;
 }
 
+.content .header-logo-big {
+  text-align: center;
+  margin: 0 auto;
+}
+
 .footer::before {
   content: "";
   display: block;

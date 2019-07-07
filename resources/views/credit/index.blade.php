@@ -18,9 +18,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
     <link rel='dns-prefetch' href='//go.akrediti.ru'/>
-    <title>Взять займ онлайн беспроцентный. Взять займ на карту. Взять займ без отказа.</title>
-    <meta name="keywords" content="Взять займ. Получить займ онлайн. Взять займ на карту. Взять займ без отказа.">
-    <meta name="description" content="Взять в займ онлайн. Взять займ на карту быстро. Взять займ без отказа.">
+    <title><?= setting('credit.header_title') ?></title>
+    <meta name="keywords" content="<?= setting('credit.header_title') ?>">
+    <meta name="description" content="<?= setting('credit.header_description') ?>">
     <link rel="icon" href="/bank2/assets/rz/favicon.png" type="image/png">
     <link rel="stylesheet" href="/bank2/css/style.css">
     <link rel="manifest" href="/manifest.json">
@@ -89,6 +89,9 @@
         <h2>
             <span class="inner-text">Займы от 0% на карту</span>
         </h2>
+        <div class="header-logo-big">
+            <img src="{{ Voyager::image(setting('header.header_logo')) }}" alt="" class="header__logotype">
+        </div>
         <div class="center-text after-h2">
             <p class="topp">Получите лучшие условия займа и увеличте % одобрения отправляя 4-5 заявок!</p>
         </div>
