@@ -858,14 +858,24 @@ ul {
             font-size: 2em;
         }
     }
-    h2::after {
+    //h2::after {
+    //    content: "";
+    //    display: inline-block;
+    //    width: 8rem;
+    //    height: 4rem;
+    //    background-size: contain;
+    //}
+    h2::before {
         content: "";
         display: inline-block;
         width: 8rem;
         height: 4rem;
         background-size: contain;
     }
-    h2::before {
+    .center-text.after-h2 {
+        text-align: center;
+    }
+    .center-text.after-h2:after {
         content: "";
         display: inline-block;
         width: 8rem;

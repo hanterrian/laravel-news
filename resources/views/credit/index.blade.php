@@ -88,34 +88,34 @@
     <div class="content">
         <h2>
             <span class="inner-text">Займы от 0% на карту</span>
-            <center>
-                <p class="topp">Получите лучшие условия займа и увеличте % одобрения отправляя 4-5 заявок!</p>
-            </center>
         </h2>
+        <div class="center-text after-h2">
+            <p class="topp">Получите лучшие условия займа и увеличте % одобрения отправляя 4-5 заявок!</p>
+        </div>
         <div id="spisok1" class="offers">
             @foreach($models as $model)
                 <a class="offer_wrap offer_link" target="_blank" href="{{ $model->link_to_site }}" data-oid="10">
                     <div class="link_offers">
                         @if(false)
-                        <div class="offer_mark">
-                            @switch($model->mark)
-                                @case(1)
-                                <img src="{{ asset('/img/mark/recomenduim_ua.png') }}"/>
-                                @break
-                                @case(2)
-                                <img src="{{ asset('/img/mark/pp_odobr_predpr.png') }}"/>
-                                @break
-                                @case(3)
-                                <img src="{{ asset('/img/mark/perviie_zaimi_pod_0.png') }}"/>
-                                @break
-                                @case(4)
-                                <img src="{{ asset('/img/mark/pervIe1000.png') }}"/>
-                                @break
-                                @case(5)
-                                <img class="like" src="{{ asset('/img/mark/like_ua.png') }}"/>
-                                @break
-                            @endswitch
-                        </div>
+                            <div class="offer_mark">
+                                @switch($model->mark)
+                                    @case(1)
+                                    <img src="{{ asset('/img/mark/recomenduim_ua.png') }}"/>
+                                    @break
+                                    @case(2)
+                                    <img src="{{ asset('/img/mark/pp_odobr_predpr.png') }}"/>
+                                    @break
+                                    @case(3)
+                                    <img src="{{ asset('/img/mark/perviie_zaimi_pod_0.png') }}"/>
+                                    @break
+                                    @case(4)
+                                    <img src="{{ asset('/img/mark/pervIe1000.png') }}"/>
+                                    @break
+                                    @case(5)
+                                    <img class="like" src="{{ asset('/img/mark/like_ua.png') }}"/>
+                                    @break
+                                @endswitch
+                            </div>
                         @endif
 
                         <div id="cr_block_new">
