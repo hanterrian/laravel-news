@@ -11,6 +11,9 @@
 |
 */
 
+Route::middleware('cors')->group(function () {
+    Route::get('/script/get', 'ScriptController@get');
+});
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
