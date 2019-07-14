@@ -13,7 +13,7 @@ return [
     */
 
     'supportsCredentials' => true,
-    'allowedOrigins' => ['a.cijworld.com'],// ex: ['abc.com', 'api.abc.com']
+    'allowedOrigins' => ['*.cijworld.com'],// ex: ['abc.com', 'api.abc.com']
     'allowedHeaders' => ['*'],
     'allowedMethods' => ['GET'],// ex: ['GET', 'POST', 'PUT', 'DELETE']
     'exposedHeaders' => [],
