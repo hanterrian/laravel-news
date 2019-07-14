@@ -34,7 +34,7 @@ if(!window.jQuery)
     script.type = "text/javascript";
     script.src = "https://code.jquery.com/jquery-3.4.1.min.js";
     script.integrity = "sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=";
-    script.crossorigin = "anonymous";
+    script.crossOrigin = "anonymous";
     
     document.getElementsByTagName('head')[0].appendChild(script);
 }
