@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 
 /**
  * Class ScriptController
@@ -14,19 +15,17 @@ class ScriptController extends Controller
     /**
      * @param Request $request
      *
-     * @return string
+     * @return Response
      */
     public function get(Request $request)
     {
         $apiKey = $request->get('apiKey');
         $referer = $request->headers->get('Referer');
 
-        dump($referer);
-        exit();
         $js = <<<JS
-111
+console.log('Init scripts');
 JS;
 
-        return $js;
+        return (new Response($js, 200))->header('Content-type', 'application/javascript');
     }
 }
