@@ -135,21 +135,21 @@ CSS;
         $list = [
             [
                 'type' => 'social',
-                'icon' => 'http://lnews.locale/img/iconmonstr-telegram-1.svg',
+                'icon' => url('/img/iconmonstr-telegram-1.svg'),
                 'message' => 'Telegram link',
                 'href' => 'https://telegram.org/',
             ],
             [
                 'type' => 'popup',
-                'icon' => 'http://lnews.locale/img/logotype.png',
+                'icon' => url('/img/logotype.png'),
                 'message' => 'Test link',
-                'href' => 'http://lnews.locale/',
+                'href' => url('/'),
             ],
             [
                 'type' => 'popup',
-                'icon' => 'http://lnews.locale/img/logotype.png',
+                'icon' => url('/img/logotype.png'),
                 'message' => 'Test link 2',
-                'href' => 'http://lnews.locale/',
+                'href' => url('/'),
             ],
         ];
 
