@@ -15,7 +15,7 @@ return [
     'supportsCredentials' => false,
     'allowedOrigins' => ['*'],// ex: ['abc.com', 'api.abc.com']
     'allowedHeaders' => ['*'],
-    'allowedMethods' => ['GET'],// ex: ['GET', 'POST', 'PUT', 'DELETE']
+    'allowedMethods' => ['GET', 'POST'],// ex: ['GET', 'POST', 'PUT', 'DELETE']
     'exposedHeaders' => [],
     'maxAge' => 0,
 
