@@ -144,7 +144,7 @@ JS;
         if ($popupSite) {
             $css = <<<CSS
 .ep-popup {
-    position: absolute;
+    position: fixed;
     right: 25px;
     bottom: 25px;
     background: #ffffff;
@@ -183,7 +183,6 @@ JS;
 
 @media only screen and (max-width: 1200px) {
     .ep-popup {
-        position: absolute;
         right: 10px;
         top: 70px;
         bottom: auto;
@@ -218,7 +217,6 @@ JS;
 
 @media only screen and (max-width: 768px) {
     .ep-popup {
-        position: absolute;
         right: 10px;
         top: 10px;
         bottom: auto;
