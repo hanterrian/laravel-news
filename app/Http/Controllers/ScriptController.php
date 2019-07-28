@@ -185,7 +185,7 @@ JS;
     .ep-popup {
         position: absolute;
         right: 10px;
-        top: 30px;
+        top: 70px;
         bottom: auto;
         background: #ffffff;
         padding: 5px;
