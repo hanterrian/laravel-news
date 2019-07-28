@@ -105,16 +105,16 @@ JS;
 
     public function css(Request $request)
     {
-//        $apiKey = $request->get('apiKey');
-//        $referer = $request->headers->get('Referer');
-//        $schema = parse_url($referer, PHP_URL_SCHEME);
-//        $domain = parse_url($referer, PHP_URL_HOST);
-//        $url = "{$schema}://{$domain}";
-//
-//        $popupSite = PopupSite::where(['domain' => $url])->first();
-//
-//        if ($popupSite) {
-        $css = <<<CSS
+        $apiKey = $request->get('apiKey');
+        $referer = $request->headers->get('Referer');
+        $schema = parse_url($referer, PHP_URL_SCHEME);
+        $domain = parse_url($referer, PHP_URL_HOST);
+        $url = "{$schema}://{$domain}";
+
+        $popupSite = PopupSite::where(['domain' => $url])->first();
+
+        if ($popupSite) {
+            $css = <<<CSS
 .ep-popup {
     position: absolute;
     right: 25px;
@@ -124,6 +124,7 @@ JS;
     border-radius:10px;
     box-shadow: 0 0 10px #000;
     display: none;
+    max-width: 100%;
 }
 .ep-popup .ep-popup-content {
     display: block;
@@ -147,16 +148,38 @@ JS;
     color: #000000;
     float: right;
 }
+
+@media only screen and (max-width: 768px) {
+    .ep-popup {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        bottom: auto;
+        background: #ffffff;
+        padding: 5px;
+        border-radius:5px;
+        box-shadow: 0 0 5px #000;
+        width: calc(100% - 30px);
+        max-width: calc(100% - 30px);
+    }
+    .ep-popup .ep-popup-content .ep-popup-icon {
+        padding-right: 10px;
+        max-height: 40px;
+    }
+    .ep-popup .ep-popup-content .ep-popup-icon img {
+        max-height: 40px;
+    }
+}
 CSS;
 
-        return (new Response($css, 200))->header('Content-type', 'text/css');
-//        } else {
-//            $js = <<<JS
-//console.log('Domain not register');
-//JS;
-//
-//            return (new Response($js, 403))->header('Content-type', 'application/javascript');
-//        }
+            return (new Response($css, 200))->header('Content-type', 'text/css');
+        } else {
+            $js = <<<JS
+console.log('Domain not register');
+JS;
+
+            return (new Response($js, 403))->header('Content-type', 'application/javascript');
+        }
     }
 
     /**
