@@ -180,19 +180,19 @@ JS;
     float: right;
 }
 .ep-popup .ep-popup-close {
-    top: -5px;
-    right: -5px;
-    width: 10px;
-    height: 10px;
-    border-radius: 10px;
+    top: -15px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
     display: block;
     position: absolute;
     cursor: pointer;
     background: #ffffff;
 }
 .ep-popup .ep-popup-close i {
-    width: 10px;
-    height: 10px;
+    width: 30px;
+    height: 30px;
     display: block;
     background: url("{$closeBtn}") no-repeat center center;
 }
@@ -217,6 +217,23 @@ JS;
     .ep-popup .ep-popup-content .ep-popup-icon img {
         max-height: 65px;
     }
+    .ep-popup .ep-popup-close {
+        top: -5px;
+        right: -5px;
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        background: #ffffff;
+    }
+    .ep-popup .ep-popup-close i {
+        width: 10px;
+        height: 10px;
+        display: block;
+        background: url("{$closeBtn}") no-repeat center center;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -238,6 +255,23 @@ JS;
     }
     .ep-popup .ep-popup-content .ep-popup-icon img {
         max-height: 65px;
+    }
+    .ep-popup .ep-popup-close {
+        top: -5px;
+        right: -5px;
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        background: #ffffff;
+    }
+    .ep-popup .ep-popup-close i {
+        width: 10px;
+        height: 10px;
+        display: block;
+        background: url("{$closeBtn}") no-repeat center center;
     }
 }
 CSS;
