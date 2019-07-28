@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Popup;
+use App\PopupSite;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
@@ -21,11 +23,17 @@ class ScriptController extends Controller
     {
         $apiKey = $request->get('apiKey');
         $referer = $request->headers->get('Referer');
+        $schema = parse_url($referer, PHP_URL_SCHEME);
+        $domain = parse_url($referer, PHP_URL_HOST);
+        $url = "{$schema}://{$domain}";
 
-        $popupUrl = route('script-load');
-        $cssUrl = route('script-css');
+        $popupSite = PopupSite::where(['domain' => $url])->first();
 
-        $js = <<<JS
+        if ($popupSite) {
+            $popupUrl = route('script-load');
+            $cssUrl = route('script-css');
+
+            $js = <<<JS
 console.log('Init scripts');
 
 if(!window.jQuery)
@@ -85,12 +93,28 @@ function load()
 console.log('Init scripts complete');
 JS;
 
-        return (new Response($js, 200))->header('Content-type', 'application/javascript');
+            return (new Response($js, 200))->header('Content-type', 'application/javascript');
+        } else {
+            $js = <<<JS
+console.log('Domain not register');
+JS;
+
+            return (new Response($js, 403))->header('Content-type', 'application/javascript');
+        }
     }
 
     public function css(Request $request)
     {
-        $css = <<<CSS
+        $apiKey = $request->get('apiKey');
+        $referer = $request->headers->get('Referer');
+        $schema = parse_url($referer, PHP_URL_SCHEME);
+        $domain = parse_url($referer, PHP_URL_HOST);
+        $url = "{$schema}://{$domain}";
+
+        $popupSite = PopupSite::where(['domain' => $url])->first();
+
+        if ($popupSite) {
+            $css = <<<CSS
 .ep-popup {
     position: absolute;
     right: 25px;
@@ -122,7 +146,14 @@ JS;
 }
 CSS;
 
-        return (new Response($css, 200))->header('Content-type', 'text/css');
+            return (new Response($css, 200))->header('Content-type', 'text/css');
+        } else {
+            $js = <<<JS
+console.log('Domain not register');
+JS;
+
+            return (new Response($js, 403))->header('Content-type', 'application/javascript');
+        }
     }
 
     /**
@@ -132,44 +163,43 @@ CSS;
      */
     public function load(Request $request)
     {
-        $list = [
-            [
-                'type' => 'social',
-                'icon' => url('/img/iconmonstr-telegram-1.svg'),
-                'message' => 'Telegram link',
-                'href' => 'https://telegram.org/',
-            ],
-            [
-                'type' => 'popup',
-                'icon' => url('/img/logotype.png'),
-                'message' => 'Test link',
-                'href' => url('/'),
-            ],
-            [
-                'type' => 'popup',
-                'icon' => url('/img/logotype.png'),
-                'message' => 'Test link 2',
-                'href' => url('/'),
-            ],
-        ];
+        $apiKey = $request->get('apiKey');
+        $referer = $request->headers->get('Referer');
+        $schema = parse_url($referer, PHP_URL_SCHEME);
+        $domain = parse_url($referer, PHP_URL_HOST);
+        $url = "{$schema}://{$domain}";
 
-        $key = array_rand($list);
+        /** @var PopupSite $popupSite */
+        $popupSite = PopupSite::where(['domain' => $url])->first();
 
-        $item = (isset($list[$key])) ? $list[$key] : [];
-
-        $html = <<<HTML
+        if ($popupSite) {
+            /** @var Popup $popup */
+            $popup = $popupSite->popups()->inRandomOrder()->first();
+            
+            if ($popup) {
+                $html = <<<HTML
 <div class="ep-popup">
-    <a class="ep-popup-content" href="{$item['href']}" target="_blank">
+    <a class="ep-popup-content" href="{$popup->link}" target="_blank">
         <div class="ep-popup-icon">
-            <img src="{$item['icon']}" alt="{$item['message']}"/>
+            <img src="{$popup->getImageSrc()}" alt="{$popup->message}"/>
         </div>
         <div class="ep-popup-message">
-            {$item['message']}
+            {$popup->message}
         </div>
     </a>
 </div>
 HTML;
+            } else {
+                $html = '';
+            }
 
-        return (new Response($html, 200))->header('Content-type', 'text/html');
+            return (new Response($html, 200))->header('Content-type', 'text/html');
+        } else {
+            $js = <<<JS
+console.log('Domain not register');
+JS;
+
+            return (new Response($js, 403))->header('Content-type', 'application/javascript');
+        }
     }
 }
