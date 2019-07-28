@@ -66,7 +66,24 @@ function init(){
     
     document.getElementsByTagName('head')[0].appendChild(link);
     
-   load();
+    var script = document.createElement('script');
+    
+    script.type = "text/javascript";
+    script.src = "https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js";
+    script.crossOrigin = "anonymous";
+    
+    document.getElementsByTagName('head')[0].appendChild(script);
+    
+    setTimeout(function() {
+        var cookie = $.cookie('ep-popup-close');
+        
+        console.log(cookie);
+        $(document).on('click', '.ep-popup-close', function() {
+          
+        });
+        
+        load();
+    }, 500);
 }
 
 function load()
@@ -211,6 +228,9 @@ JS;
         </div>
         <div class="ep-popup-message">
             {$popup->message}
+        </div>
+        <div class="ep-popup-close">
+            <i></i>
         </div>
     </a>
 </div>
