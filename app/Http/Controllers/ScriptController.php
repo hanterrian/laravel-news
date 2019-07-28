@@ -138,6 +138,9 @@ JS;
     padding-right: 15px;
     max-height: 120px;
 }
+.ep-popup .ep-popup-content .ep-popup-icon img {
+    max-height: 120px;
+}
 .ep-popup .ep-popup-content .ep-popup-message {
     display: block;
     text-decoration: none;
@@ -175,7 +178,7 @@ JS;
         if ($popupSite) {
             /** @var Popup $popup */
             $popup = $popupSite->popups()->inRandomOrder()->first();
-            
+
             if ($popup) {
                 $html = <<<HTML
 <div class="ep-popup">
