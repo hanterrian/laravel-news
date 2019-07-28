@@ -49,6 +49,14 @@ if(!window.jQuery)
     
     document.getElementsByTagName('head')[0].appendChild(script);
     
+    setTimeout(function() {
+        init();
+    },500);
+} else {
+    init();
+}
+
+function init(){
     var link = document.createElement('link');
     
     link.rel = "stylesheet";
@@ -58,14 +66,6 @@ if(!window.jQuery)
     
     document.getElementsByTagName('head')[0].appendChild(link);
     
-    setTimeout(function() {
-        init();
-    },500);
-} else {
-    init();
-}
-
-function init(){
    load();
 }
 
@@ -114,7 +114,7 @@ JS;
 //        $popupSite = PopupSite::where(['domain' => $url])->first();
 //
 //        if ($popupSite) {
-            $css = <<<CSS
+        $css = <<<CSS
 .ep-popup {
     position: absolute;
     right: 25px;
@@ -149,7 +149,7 @@ JS;
 }
 CSS;
 
-            return (new Response($css, 200))->header('Content-type', 'text/css');
+        return (new Response($css, 200))->header('Content-type', 'text/css');
 //        } else {
 //            $js = <<<JS
 //console.log('Domain not register');
