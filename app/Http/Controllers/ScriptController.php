@@ -105,15 +105,15 @@ JS;
 
     public function css(Request $request)
     {
-        $apiKey = $request->get('apiKey');
-        $referer = $request->headers->get('Referer');
-        $schema = parse_url($referer, PHP_URL_SCHEME);
-        $domain = parse_url($referer, PHP_URL_HOST);
-        $url = "{$schema}://{$domain}";
-
-        $popupSite = PopupSite::where(['domain' => $url])->first();
-
-        if ($popupSite) {
+//        $apiKey = $request->get('apiKey');
+//        $referer = $request->headers->get('Referer');
+//        $schema = parse_url($referer, PHP_URL_SCHEME);
+//        $domain = parse_url($referer, PHP_URL_HOST);
+//        $url = "{$schema}://{$domain}";
+//
+//        $popupSite = PopupSite::where(['domain' => $url])->first();
+//
+//        if ($popupSite) {
             $css = <<<CSS
 .ep-popup {
     position: absolute;
@@ -150,13 +150,13 @@ JS;
 CSS;
 
             return (new Response($css, 200))->header('Content-type', 'text/css');
-        } else {
-            $js = <<<JS
-console.log('Domain not register');
-JS;
-
-            return (new Response($js, 403))->header('Content-type', 'application/javascript');
-        }
+//        } else {
+//            $js = <<<JS
+//console.log('Domain not register');
+//JS;
+//
+//            return (new Response($js, 403))->header('Content-type', 'application/javascript');
+//        }
     }
 
     /**
