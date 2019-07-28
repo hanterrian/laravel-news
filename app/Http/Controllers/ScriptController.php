@@ -168,10 +168,10 @@ JS;
     color: #000000;
     float: left;
     padding-right: 15px;
-    max-height: 120px;
+    max-height: 140px;
 }
 .ep-popup .ep-popup-content .ep-popup-icon img {
-    max-height: 120px;
+    max-height: 140px;
 }
 .ep-popup .ep-popup-content .ep-popup-message {
     display: block;
@@ -198,10 +198,10 @@ JS;
     }
     .ep-popup .ep-popup-content .ep-popup-icon {
         padding-right: 10px;
-        max-height: 40px;
+        max-height: 60px;
     }
     .ep-popup .ep-popup-content .ep-popup-icon img {
-        max-height: 40px;
+        max-height: 60px;
     }
     .ep-popup .ep-popup-close {
         top: -5px;
@@ -232,10 +232,10 @@ JS;
     }
     .ep-popup .ep-popup-content .ep-popup-icon {
         padding-right: 10px;
-        max-height: 40px;
+        max-height: 60px;
     }
     .ep-popup .ep-popup-content .ep-popup-icon img {
-        max-height: 40px;
+        max-height: 60px;
     }
     .ep-popup .ep-popup-close {
         top: -5px;
