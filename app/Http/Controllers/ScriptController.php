@@ -181,6 +181,41 @@ JS;
     display: none;
 }
 
+@media only screen and (max-width: 1200px) {
+    .ep-popup {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        bottom: auto;
+        background: #ffffff;
+        padding: 5px;
+        padding-right: 15px;
+        border-radius:5px;
+        box-shadow: 0 0 5px #000;
+        width: calc(100% - 40px);
+        max-width: calc(100% - 40px);
+    }
+    .ep-popup .ep-popup-content .ep-popup-icon {
+        padding-right: 10px;
+        max-height: 40px;
+    }
+    .ep-popup .ep-popup-content .ep-popup-icon img {
+        max-height: 40px;
+    }
+    .ep-popup .ep-popup-close {
+        top: -5px;
+        right: -5px;
+        width: 10px;
+        height: 10px;
+        border: 1px solid #000000;
+        border-radius: 10px;
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        background: #ffffff;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .ep-popup {
         position: absolute;
