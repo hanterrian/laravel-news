@@ -181,7 +181,7 @@ JS;
     display: none;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .ep-popup {
         position: absolute;
         right: 10px;
