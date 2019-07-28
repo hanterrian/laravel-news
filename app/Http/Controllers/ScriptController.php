@@ -75,36 +75,51 @@ function init(){
     document.getElementsByTagName('head')[0].appendChild(script);
     
     setTimeout(function() {
-        var cookie = $.cookie('ep-popup-close');
-        
-        console.log(cookie);
-        $(document).on('click', '.ep-popup-close', function() {
-          
+        $(window).scroll(function() {
+            setTimeout(function() {
+                var cookie = $.cookie('ep-popup-close');
+            
+                if (cookie === undefined) { 
+                    $(document).on('click', '.ep-popup-close', function() {
+                        $.cookie('ep-popup-close', 1);
+                        
+                        var popup = $('.ep-popup');
+                        popup.fadeOut(500);
+                        setTimeout(function() {
+                            popup.remove();
+                        }, 500);
+                    });
+                    
+                    load();
+                }
+            }, 3000);
         });
-        
-        load();
     }, 500);
 }
 
 function load()
 {
-     $.post('{$popupUrl}', function(responce) {
-      $('body').append(responce);
-      
-      var popup = $('.ep-popup');
-      
-      popup.fadeIn(500);
-      
-      setTimeout(function() {
-       popup.fadeOut(500);
-      
-       setTimeout(function() {
-        popup.remove();
-       
-        load();
-       }, 500);
-      }, 10000);
-    });
+        var cookie = $.cookie('ep-popup-close');
+        
+        if (cookie === undefined) { 
+         $.post('{$popupUrl}', function(responce) {
+          $('body').append(responce);
+          
+          var popup = $('.ep-popup');
+          
+          popup.fadeIn(500);
+          
+          setTimeout(function() {
+           popup.fadeOut(500);
+
+           setTimeout(function() {
+            popup.remove();
+
+            load();
+           }, 500);
+          }, 10000);
+        });
+        }
 }
 
 console.log('Init scripts complete');
@@ -144,9 +159,10 @@ JS;
     max-width: 100%;
 }
 .ep-popup .ep-popup-content {
-    display: block;
+    display: flex;
     text-decoration: none;
     color: #000000;
+    position: relative;
 }
 .ep-popup .ep-popup-content .ep-popup-icon {
     display: block;
@@ -165,6 +181,9 @@ JS;
     color: #000000;
     float: right;
 }
+.ep-popup .ep-popup-close {
+    display: none;
+}
 
 @media only screen and (max-width: 768px) {
     .ep-popup {
@@ -174,10 +193,11 @@ JS;
         bottom: auto;
         background: #ffffff;
         padding: 5px;
+        padding-right: 15px;
         border-radius:5px;
         box-shadow: 0 0 5px #000;
-        width: calc(100% - 30px);
-        max-width: calc(100% - 30px);
+        width: calc(100% - 40px);
+        max-width: calc(100% - 40px);
     }
     .ep-popup .ep-popup-content .ep-popup-icon {
         padding-right: 10px;
@@ -185,6 +205,18 @@ JS;
     }
     .ep-popup .ep-popup-content .ep-popup-icon img {
         max-height: 40px;
+    }
+    .ep-popup .ep-popup-close {
+        top: -5px;
+        right: -5px;
+        width: 10px;
+        height: 10px;
+        border: 1px solid #000000;
+        border-radius: 10px;
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        background: #ffffff;
     }
 }
 CSS;
@@ -229,10 +261,10 @@ JS;
         <div class="ep-popup-message">
             {$popup->message}
         </div>
-        <div class="ep-popup-close">
-            <i></i>
-        </div>
     </a>
+    <div class="ep-popup-close">
+        <i></i>
+    </div>
 </div>
 HTML;
             } else {
