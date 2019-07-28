@@ -156,6 +156,7 @@ JS;
     box-shadow: 0 0 10px #000;
     display: none;
     max-width: 100%;
+    z-index: 999999;
 }
 .ep-popup .ep-popup-content {
     display: flex;
