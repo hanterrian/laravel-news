@@ -142,6 +142,8 @@ JS;
         $popupSite = PopupSite::where(['domain' => $url])->first();
 
         if ($popupSite) {
+            $closeBtn = url('/close-button.svg');
+
             $css = <<<CSS
 .ep-popup {
     position: fixed;
@@ -240,12 +242,17 @@ JS;
         right: -5px;
         width: 10px;
         height: 10px;
-        border: 1px solid #000000;
         border-radius: 10px;
         display: block;
         position: absolute;
         cursor: pointer;
         background: #ffffff;
+    }
+    .ep-popup .ep-popup-close i {
+        width: 10px;
+        height: 10px;
+        display: block;
+        background: url("{$closeBtn}") no-repeat center center;
     }
 }
 CSS;
