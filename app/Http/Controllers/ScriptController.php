@@ -75,25 +75,21 @@ function init(){
     document.getElementsByTagName('head')[0].appendChild(script);
     
     setTimeout(function() {
-        $(window).scroll(function() {
-            setTimeout(function() {
-                var cookie = $.cookie('ep-popup-close');
+        var cookie = $.cookie('ep-popup-close');
             
-                if (cookie === undefined) { 
-                    $(document).on('click', '.ep-popup-close', function() {
-                        $.cookie('ep-popup-close', 1);
+        if (cookie === undefined) { 
+            $(document).on('click', '.ep-popup-close', function() {
+                $.cookie('ep-popup-close', 1);
                         
-                        var popup = $('.ep-popup');
-                        popup.fadeOut(500);
-                        setTimeout(function() {
-                            popup.remove();
-                        }, 500);
-                    });
+                var popup = $('.ep-popup');
+                popup.fadeOut(500);
+                setTimeout(function() {
+                    popup.remove();
+                }, 500);
+            });
                     
-                    load();
-                }
-            }, 3000);
-        });
+            load();
+        }
     }, 500);
 }
 
