@@ -180,7 +180,21 @@ JS;
     float: right;
 }
 .ep-popup .ep-popup-close {
-    display: none;
+    top: -5px;
+    right: -5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    background: #ffffff;
+}
+.ep-popup .ep-popup-close i {
+    width: 10px;
+    height: 10px;
+    display: block;
+    background: url("{$closeBtn}") no-repeat center center;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -203,18 +217,6 @@ JS;
     .ep-popup .ep-popup-content .ep-popup-icon img {
         max-height: 65px;
     }
-    .ep-popup .ep-popup-close {
-        top: -5px;
-        right: -5px;
-        width: 10px;
-        height: 10px;
-        border: 1px solid #000000;
-        border-radius: 10px;
-        display: block;
-        position: absolute;
-        cursor: pointer;
-        background: #ffffff;
-    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -236,23 +238,6 @@ JS;
     }
     .ep-popup .ep-popup-content .ep-popup-icon img {
         max-height: 65px;
-    }
-    .ep-popup .ep-popup-close {
-        top: -5px;
-        right: -5px;
-        width: 10px;
-        height: 10px;
-        border-radius: 10px;
-        display: block;
-        position: absolute;
-        cursor: pointer;
-        background: #ffffff;
-    }
-    .ep-popup .ep-popup-close i {
-        width: 10px;
-        height: 10px;
-        display: block;
-        background: url("{$closeBtn}") no-repeat center center;
     }
 }
 CSS;
