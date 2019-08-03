@@ -15,6 +15,7 @@ Route::middleware('cors')->group(function () {
     Route::get('/script/get', 'ScriptController@get')->name('script-get');
 //    Route::get('/script/load', 'ScriptController@load');
     Route::post('/script/load', 'ScriptController@load')->name('script-load');
+    Route::post('/script/banner', 'ScriptController@banner')->name('script-banner');
     Route::get('/script/css', 'ScriptController@css')->name('script-css');
 });
 

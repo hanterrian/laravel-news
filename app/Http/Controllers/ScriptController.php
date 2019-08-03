@@ -31,6 +31,7 @@ class ScriptController extends Controller
 
         if ($popupSite) {
             $popupUrl = route('script-load');
+            $bannerUrl = route('script-banner');
             $cssUrl = route('script-css');
 
             $js = <<<JS
@@ -51,9 +52,11 @@ if(!window.jQuery)
     
     setTimeout(function() {
         init();
+        banner();
     },500);
 } else {
     init();
+    banner();
 }
 
 function init(){
@@ -116,6 +119,15 @@ function load()
           }, 10000);
         });
         }
+}
+
+function banner()
+{
+    $.post('{$bannerUrl}', function(responce) {
+        if (responce.has) { 
+            $('.'+responce.place).append(responce.body);
+        }
+    });
 }
 
 console.log('Init scripts complete');
@@ -306,7 +318,12 @@ JS;
 
         if ($popupSite) {
             /** @var Popup $popup */
-            $popup = $popupSite->popups()->inRandomOrder()->first();
+            $popup = $popupSite->popups()
+                ->where([
+                    'type' => Popup::TYPE_POPUP
+                ])
+                ->inRandomOrder()
+                ->first();
 
             if ($popup) {
                 $html = <<<HTML
@@ -336,5 +353,56 @@ JS;
 
             return (new Response($js, 403))->header('Content-type', 'application/javascript');
         }
+    }
+
+    /**
+     * @param Request $request
+     *
+     * @return array
+     */
+    public function banner(Request $request)
+    {
+        $data = ['has' => false];
+
+        $apiKey = $request->get('apiKey');
+        $referer = $request->headers->get('Referer');
+        $schema = parse_url($referer, PHP_URL_SCHEME);
+        $domain = parse_url($referer, PHP_URL_HOST);
+        $url = "{$schema}://{$domain}";
+
+        /** @var PopupSite $popupSite */
+        $popupSite = PopupSite::where(['domain' => $url])->first();
+
+        if ($popupSite) {
+            /** @var Popup $popup */
+            $popup = $popupSite->popups()
+                ->where([
+                    'type' => Popup::TYPE_POPUP
+                ])
+                ->inRandomOrder()
+                ->first();
+
+            if ($popup) {
+                $html = <<<HTML
+<div class="ep-popup">
+    <a class="ep-popup-content" href="{$popup->link}" target="_blank">
+        <div class="ep-popup-icon">
+            <img src="{$popup->getImageSrc()}" alt="{$popup->message}"/>
+        </div>
+        <div class="ep-popup-message">
+            {$popup->message}
+        </div>
+    </a>
+    <div class="ep-popup-close">
+        <i></i>
+    </div>
+</div>
+HTML;
+            } else {
+                $html = '';
+            }
+        }
+
+        return $data;
     }
 }

@@ -21,6 +21,7 @@ class VerifyCsrfToken extends Middleware
     protected $except = [
         '/script/get',
         '/script/load',
+        '/script/banner',
         'script/get',
     ];
 }
