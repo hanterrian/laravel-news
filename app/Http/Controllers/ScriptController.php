@@ -171,6 +171,7 @@ JS;
     min-width: 120px;
     height: 100%;
     min-height: 80px;
+    padding-bottom: 40px;
 }
 .ep-popup .ep-popup-content .ep-popup-btn {
     position: absolute;
