@@ -165,7 +165,12 @@ JS;
     position: relative;
 }
 .ep-popup .ep-popup-content .ep-popup-message {
-    min-width: 150px;
+    display: flex;
+    position: relative;
+    width: 100%;
+    min-width: 120px;
+    height: 100%;
+    min-height: 80px;
 }
 .ep-popup .ep-popup-content .ep-popup-btn {
     position: absolute;
@@ -338,9 +343,9 @@ JS;
         </div>
         <div class="ep-popup-message">
             {$popup->message}
-        </div>
-        <div class="ep-popup-btn">
-            Перейти
+            <div class="ep-popup-btn">
+                Перейти
+            </div>
         </div>
     </a>
     <div class="ep-popup-close">
