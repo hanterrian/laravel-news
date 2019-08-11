@@ -164,6 +164,19 @@ JS;
     color: #000000;
     position: relative;
 }
+.ep-popup .ep-popup-content .ep-popup-message {
+    min-width: 150px;
+}
+.ep-popup .ep-popup-content .ep-popup-btn {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background: #3adb76;
+    color: #ffffff;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
 .ep-popup .ep-popup-content .ep-popup-icon {
     display: block;
     text-decoration: none;
@@ -240,16 +253,19 @@ JS;
 
 @media only screen and (max-width: 768px) {
     .ep-popup {
-        right: 10px;
-        top: 10px;
+        right: 15px;
+        top: 15px;
         bottom: auto;
-        background: #ffffff;
+        background: #1d66fb;
         padding: 5px;
         padding-right: 15px;
         border-radius:5px;
         box-shadow: 0 0 5px #000;
         width: calc(100% - 40px);
         max-width: calc(100% - 40px);
+    }
+    .ep-popup .ep-popup-content .ep-popup-message {
+        color: #ffffff;
     }
     .ep-popup .ep-popup-content .ep-popup-icon {
         padding-right: 10px;
@@ -259,19 +275,19 @@ JS;
         max-height: 65px;
     }
     .ep-popup .ep-popup-close {
-        top: -5px;
-        right: -5px;
-        width: 10px;
-        height: 10px;
-        border-radius: 10px;
+        top: -15px;
+        right: -15px;
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
         display: block;
         position: absolute;
         cursor: pointer;
         background: #ffffff;
     }
     .ep-popup .ep-popup-close i {
-        width: 10px;
-        height: 10px;
+        width: 30px;
+        height: 30px;
         display: block;
         background: url("{$closeBtn}") no-repeat center center;
     }
@@ -322,6 +338,9 @@ JS;
         </div>
         <div class="ep-popup-message">
             {$popup->message}
+        </div>
+        <div class="ep-popup-btn">
+            Перейти
         </div>
     </a>
     <div class="ep-popup-close">
