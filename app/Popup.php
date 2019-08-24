@@ -29,11 +29,13 @@ use Illuminate\Database\Eloquent\Model;
  * @property string|null                     $width
  * @property string|null                     $height
  * @property string|null                     $html
+ * @property string|null                     $btn_text
  * @property-read \App\PopupSite             $site
  * @property-read \App\PopupSite             $siteId
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Popup newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Popup newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Popup query()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Popup whereBtnText($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Popup whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Popup whereDeletedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Popup whereHeight($value)

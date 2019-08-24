@@ -335,6 +335,8 @@ JS;
                 ->inRandomOrder()
                 ->first();
 
+            $btnText = ($popup->btn_text && $popup->btn_text != '') ? $popup->btn_text : "Перейти";
+
             if ($popup) {
                 $html = <<<HTML
 <div class="ep-popup">
@@ -345,7 +347,7 @@ JS;
         <div class="ep-popup-message">
             {$popup->message}
             <div class="ep-popup-btn">
-                Перейти
+                {$btnText}
             </div>
         </div>
     </a>
