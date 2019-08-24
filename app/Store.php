@@ -15,6 +15,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property string|null                     $comment
  * @property string|null                     $client_ip
  * @property string|null                     $user_agent
+ * @property int|null                        $is_sended
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Store newModelQuery()
@@ -42,5 +43,6 @@ class Store extends Model
         'comment',
         'client_ip',
         'user_agent',
+        'is_sended',
     ];
 }
