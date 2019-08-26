@@ -13,11 +13,15 @@
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script>
     $(document).ready(function () {
+        var bodyHeight = parent.document.body.clientHeight;
+
+        $('.b-frames').height(bodyHeight);
+
         $.each($('.b-frame'), function (k, item) {
             var width = $(item).width();
             var height = $(item).height();
             var img = $(item).find('img');
-            
+
             img.width(width).height(height);
         })
     });
