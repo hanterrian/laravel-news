@@ -388,14 +388,18 @@ JS;
         if ($popupSite) {
             /** @var Popup $popup */
             $popup = $popupSite->popups()
-                ->where([
-                    'type' => [Popup::TYPE_BANNER, Popup::TYPE_BANNER3, Popup::TYPE_HTML],
-                ])
+                ->whereIn('type', [Popup::TYPE_BANNER, Popup::TYPE_BANNER3, Popup::TYPE_HTML])
                 ->inRandomOrder()
                 ->first();
-
+            
             if ($popup) {
-                return view('script/banner', ['popup' => $popup]);
+                if ($popup->type == Popup::TYPE_HTML) {
+                    return view('script/banner-html', ['popup' => $popup]);
+                } elseif ($popup->type == Popup::TYPE_BANNER) {
+                    return view('script/banner-one', ['popup' => $popup]);
+                } elseif ($popup->type == Popup::TYPE_BANNER3) {
+                    return view('script/banner-three', ['popup' => $popup]);
+                }
             }
         }
 

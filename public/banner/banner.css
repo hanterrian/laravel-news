@@ -1,0 +1,38 @@
+body {
+    background-color: #ffffff;
+}
+.b-frames {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.b-frames .b-frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden !important;
+    position: relative;
+    margin-right: 1em;
+}
+
+.b-frames .b-frame:last-of-type {
+    margin-right: 0;
+}
+
+.b-frames .b-frame img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+
+.b-frames .b-frame .b-frame-text {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: rgba(0, 0, 0, 0.5);
+    padding: 1em 1.5em;
+}
