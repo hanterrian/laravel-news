@@ -4,7 +4,8 @@
 
 @section('content')
     <div class="b-frames">
-        <a class="b-frame" href="{{ $popup->url_1 }}" target="_blank" style="background: url('{{ Voyager::image($popup->image_1) }}') no-repeat; background-size: contain">
+        <a class="b-frame" href="{{ $popup->url_1 }}" target="_blank">
+            <img class="b-img" src="{{ Voyager::image($popup->image_1) }}" alt="{{ $popup->text_1 }}"/>
             <div class="b-frame-text">
                 {{ $popup->text_1 }}
             </div>
