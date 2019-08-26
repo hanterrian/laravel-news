@@ -386,7 +386,6 @@ JS;
 
         $popupSite = PopupSite::where(['domain' => $url])->first();
 
-        dump($url);
         if ($popupSite) {
             /** @var Popup $popup */
             $popup = $popupSite->popups()
@@ -394,8 +393,7 @@ JS;
                 ->where(['place' => $place])
                 ->inRandomOrder()
                 ->first();
-            dump($place);
-            dump($popup);
+            
             if ($popup) {
                 if ($popup->type == Popup::TYPE_HTML) {
                     return view('script/banner-html', ['popup' => $popup]);
