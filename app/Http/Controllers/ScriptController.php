@@ -372,10 +372,11 @@ JS;
 
     /**
      * @param Request $request
+     * @param         $place
      *
-     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View|string
      */
-    public function banner(Request $request)
+    public function banner(Request $request, $place)
     {
         $apiKey = $request->get('apiKey');
         $referer = $request->headers->get('Referer');
@@ -389,9 +390,10 @@ JS;
             /** @var Popup $popup */
             $popup = $popupSite->popups()
                 ->whereIn('type', [Popup::TYPE_BANNER, Popup::TYPE_BANNER3, Popup::TYPE_HTML])
+                ->where(['place' => $place])
                 ->inRandomOrder()
                 ->first();
-            
+
             if ($popup) {
                 if ($popup->type == Popup::TYPE_HTML) {
                     return view('script/banner-html', ['popup' => $popup]);
@@ -403,6 +405,6 @@ JS;
             }
         }
 
-        abort(404);
+        return '';
     }
 }
