@@ -22,6 +22,7 @@ class VerifyCsrfToken extends Middleware
         '/script/get',
         '/script/load',
         '/script/banner',
+        '/script/banner/*',
         'script/get',
     ];
 }
