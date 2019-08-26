@@ -21,6 +21,16 @@ body {
     margin-right: 0;
 }
 
+.b-frames .b-frame.b-frame-width {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden !important;
+    position: relative;
+    margin-right: 0;
+    width: 100%;
+}
+
 .b-frames .b-frame img {
     flex-shrink: 0;
     min-width: 100%;
