@@ -3,12 +3,14 @@
 <?php /** @var \App\Popup $popup */ ?>
 
 @section('content')
-    <div class="b-frames">
-        <a class="b-frame b-frame-width" href="{{ $popup->url_1 }}" target="_blank">
-            <img class="b-img" src="{{ Voyager::image($popup->image_1) }}" alt="{{ $popup->text_1 }}"/>
-            <div class="b-frame-text">
-                {{ $popup->text_1 }}
-            </div>
-        </a>
+    <div class="card-group">
+        <div class="card">
+            <a class="b-frame b-frame-1" href="{{ $popup->url_1 }}" target="_blank">
+                <img class="card-img-top" src="{{ Voyager::image($popup->image_1) }}" alt="{{ $popup->text_1 }}"/>
+                <div class="card-body">
+                    {{ $popup->text_1 }}
+                </div>
+            </a>
+        </div>
     </div>
 @endsection
