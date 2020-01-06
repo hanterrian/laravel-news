@@ -16,7 +16,7 @@ class CreditController extends Controller
      */
     public function index()
     {
-        $models = Bank::whereRegion(Bank::REGION_MAIN)->all()->sortBy('position');
+        $models = Bank::all()->whereRegion(Bank::REGION_MAIN)->sortBy('position');
 
         $model = Bank::whereRegion(Bank::REGION_MAIN)->inRandomOrder()->first();
 

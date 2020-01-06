@@ -16,7 +16,7 @@ class RusCreditController extends Controller
      */
     public function index()
     {
-        $models = Bank::whereRegion(Bank::REGION_RUS)->all()->sortBy('position');
+        $models = Bank::all()->whereRegion(Bank::REGION_RUS)->sortBy('position');
 
         $model = Bank::whereRegion(Bank::REGION_RUS)->inRandomOrder()->first();
 
