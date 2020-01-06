@@ -5,20 +5,20 @@ namespace App\Http\Controllers;
 use App\Bank;
 
 /**
- * Class CreditController
+ * Class RusCreditController
  *
  * @package App\Http\Controllers
  */
-class CreditController extends Controller
+class RusCreditController extends Controller
 {
     /**
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function index()
     {
-        $models = Bank::whereRegion(Bank::REGION_MAIN)->all()->sortBy('position');
+        $models = Bank::whereRegion(Bank::REGION_RUS)->all()->sortBy('position');
 
-        $model = Bank::whereRegion(Bank::REGION_MAIN)->inRandomOrder()->first();
+        $model = Bank::whereRegion(Bank::REGION_RUS)->inRandomOrder()->first();
 
         return view('credit.index', [
             'model' => $model,
@@ -31,7 +31,7 @@ class CreditController extends Controller
      */
     public function manifest()
     {
-        return "{\"name\": \"credit.cijworld.com\",\"short_name\": \"credit.cijworld.com\",\"start_url\": \"/\",\"display\": \"standalone\",\"gcm_sender_id\": \"800090532661\"}";
+        return "";
     }
 
     /**
@@ -39,7 +39,7 @@ class CreditController extends Controller
      */
     public function serviceworker()
     {
-        return "importScripts(\"https://creditcijworldcom.push.world/https.serviceworker.js\");";
+        return "";
     }
 
     /**
@@ -47,6 +47,6 @@ class CreditController extends Controller
      */
     public function serviceworkerUpdate()
     {
-        return "importScripts(\"https://creditcijworldcom.push.world/https.serviceworker.js\");";
+        return "";
     }
 }

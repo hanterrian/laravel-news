@@ -16,7 +16,7 @@ class ZaimController extends Controller
      */
     public function index()
     {
-        $models = Bank::all()->sortBy('position');
+        $models = Bank::whereRegion(Bank::REGION_MAIN)->all()->sortBy('position');
 
         return view('zaim.index', ['models' => $models]);
     }

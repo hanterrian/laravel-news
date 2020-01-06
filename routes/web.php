@@ -39,11 +39,18 @@ Route::group(['domain' => 'zaim.cijworld.com'], function () {
     Route::get('/page/{slug}', 'PageController@view');
 });
 
-
 Route::group(['domain' => 'credit.cijworld.com'], function () {
     Route::get('/', 'CreditController@index');
     Route::get('/manifest.json', 'CreditController@manifest');
     Route::get('/serviceworker.js', 'CreditController@serviceworker');
     Route::get('/serviceworker-update.js', 'CreditController@serviceworker-update');
+    Route::get('/page/{slug}', 'PageController@view');
+});
+
+Route::group(['domain' => 'creditrus.cijworld.com'], function () {
+    Route::get('/', 'RusCreditController@index');
+    Route::get('/manifest.json', 'RusCreditController@manifest');
+    Route::get('/serviceworker.js', 'RusCreditController@serviceworker');
+    Route::get('/serviceworker-update.js', 'RusCreditController@serviceworker-update');
     Route::get('/page/{slug}', 'PageController@view');
 });

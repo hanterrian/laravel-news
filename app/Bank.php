@@ -9,20 +9,21 @@ use TCG\Voyager\Traits\Translatable;
 /**
  * App\Bank
  *
- * @property int                                                                             $id
- * @property string                                                                          $name
- * @property string|null                                                                     $logo
- * @property string|null                                                                     $sum
- * @property string|null                                                                     $rate
- * @property string|null                                                                     $term_from
- * @property string|null                                                                     $term_to
- * @property string|null                                                                     $description
- * @property int                                                                             $link_type
- * @property string|null                                                                     $link
- * @property int                                                                             $position
- * @property string|null                                                                     $deleted_at
- * @property \Illuminate\Support\Carbon|null                                                 $created_at
- * @property \Illuminate\Support\Carbon|null                                                 $updated_at
+ * @property int $id
+ * @property int|null $region
+ * @property string $name
+ * @property string|null $logo
+ * @property string|null $sum
+ * @property string|null $rate
+ * @property string|null $term_from
+ * @property string|null $term_to
+ * @property string|null $description
+ * @property int $link_type
+ * @property string|null $link
+ * @property int $position
+ * @property string|null $deleted_at
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Bank newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Bank newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Bank query()
@@ -33,6 +34,7 @@ use TCG\Voyager\Traits\Translatable;
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Bank whereLink($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Bank whereLinkType($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Bank whereLogo($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Bank whereRegion($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Bank whereName($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Bank wherePosition($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Bank whereRate($value)
@@ -41,9 +43,9 @@ use TCG\Voyager\Traits\Translatable;
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Bank whereTermTo($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Bank whereUpdatedAt($value)
  * @mixin \Eloquent
- * @property string|null                                                                     $link_to_site
- * @property string|null                                                                     $data
- * @property-read null                                                                       $translated
+ * @property string|null $link_to_site
+ * @property string|null $data
+ * @property-read null $translated
  * @property-read \Illuminate\Database\Eloquent\Collection|\TCG\Voyager\Models\Translation[] $translations
  * @method static bool|null forceDelete()
  * @method static \Illuminate\Database\Query\Builder|\App\Bank onlyTrashed()
@@ -63,7 +65,21 @@ class Bank extends Model
     use Translatable;
     use SoftDeletes;
 
+    const REGION_MAIN = 0;
+    const REGION_RUS = 1;
+
     const TYPE_LINK = 0;
+
+    /**
+     * @return array
+     */
+    public static function getRegions()
+    {
+        return [
+            self::REGION_MAIN => __('Main'),
+            self::REGION_RUS => __('Rus'),
+        ];
+    }
 
     /**
      * @return array
@@ -81,6 +97,7 @@ class Bank extends Model
     ];
 
     public $fillable = [
+        'region',
         'name',
         'logo',
         'sum',
