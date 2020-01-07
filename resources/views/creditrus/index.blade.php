@@ -18,9 +18,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
     <link rel='dns-prefetch' href='//go.akrediti.ru'/>
-    <title><?= setting('credit.header_title') ?></title>
-    <meta name="keywords" content="<?= setting('credit.header_title') ?>">
-    <meta name="description" content="<?= setting('credit.header_description') ?>">
+    <title><?= setting('credit-rus.header_title') ?></title>
+    <meta name="keywords" content="<?= setting('credit-rus.header_title') ?>">
+    <meta name="description" content="<?= setting('credit-rus.header_description') ?>">
     <link rel="icon" href="/bank2/assets/rz/favicon.png" type="image/png">
     <link rel="stylesheet" href="/bank2/css/style.css">
     <link rel="manifest" href="/manifest.json">
@@ -35,7 +35,7 @@
         <link rel="stylesheet" href="{{ asset('smartbanner/smart-app-banner2.css') }}">
     @endif
 
-    <?= setting('credit.after_header') ?>
+    <?= setting('credit-rus.after_header') ?>
 </head>
 <body>
 <h1 class="vishi">Взять займ</h1>
@@ -187,10 +187,10 @@
         </h3>
         <div class="textBlock">
             <div class="textBlock__left">
-                <?= setting('credit.left_text') ?>
+                <?= setting('credit-rus.left_text') ?>
             </div>
             <div class="textBlock__right">
-                <?= setting('credit.right_text') ?>
+                <?= setting('credit-rus.right_text') ?>
             </div>
 
         </div>
@@ -202,7 +202,7 @@
     <footer class="footer">
         <div class="content">
             <div class="footer__text">
-                <?= setting('credit.footer_text') ?>
+                <?= setting('credit-rus.footer_text') ?>
             </div>
             <div class="footer__link">
                 <a href="https://play.google.com/store/apps/details?id=com.finapps.toploansatstakeinukraine" target="_blank">
@@ -212,7 +212,7 @@
             <div class="footer__link">
                 <a href="{{ url('/page/privacy-policy') }}" target="_blank">Политика конфиденциальности</a>
             </div>
-            <div class="copyright">&copy; creditrus.cjiworld.com.</div>
+            <div class="copyright">&copy; credit-rus.cjiworld.com.</div>
         </div>
     </footer>
 </div>
@@ -809,6 +809,6 @@
     });
 </script>
 
-<?= setting('credit.after_body') ?>
+<?= setting('credit-rus.after_body') ?>
 </body>
 </html>

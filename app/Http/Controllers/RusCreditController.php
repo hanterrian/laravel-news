@@ -20,7 +20,7 @@ class RusCreditController extends Controller
 
         $model = Bank::whereRegion(Bank::REGION_RUS)->inRandomOrder()->first();
 
-        return view('credit.index', [
+        return view('creditrus.index', [
             'model' => $model,
             'models' => $models
         ]);
