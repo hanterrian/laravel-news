@@ -54,9 +54,9 @@
         cost of the loan, including all applicable fees)
     </p>
     <p>Если вы взяли займ на сумму 1000 гривен на 90 дней с процентной ставкой 0,01% в день, то плата за пользование
-        средствами составит 0,01% в день, т.е. 0,1 грн в день. Получается вы возвращаете сумму процентов равную 9 грн,
-        т.е. 0.1 грн * 90 дней. А также сумму займа равную 1 000 грн. Таким образом, общая сумма возврата складывается
-        из суммы займа 1 000 грн и суммы начисленных процентов за 90 дн. 9 грн и равна 1090 грн.
+        средствами составит 0,01% в день, т.е. 0,1 руб в день. Получается вы возвращаете сумму процентов равную 9 руб,
+        т.е. 0.1 руб * 90 дней. А также сумму займа равную 1 000 руб. Таким образом, общая сумма возврата складывается
+        из суммы займа 1 000 руб и суммы начисленных процентов за 90 дн. 9 руб и равна 1090 руб.
     </p>
 </div>
 
@@ -70,7 +70,7 @@
                 </div>
                 <div class="notice-data">
                     <div class="notice-title">Займ за 9 минут!</div>
-                    <div class="notice-text">{{ $model->sum }} грн онлайн
+                    <div class="notice-text">{{ $model->sum }} руб онлайн
                         @foreach(explode('|', $model->description) as $description)
                             <br>
                             {{ $description }}
@@ -90,7 +90,7 @@
             <span class="inner-text">Займы от 0% на карту</span>
         </h2>
         <div class="header-logo-big">
-            <img src="{{ Voyager::image(setting('header.header_logo')) }}" alt="" class="header__logotype">
+            <img src="{{ asset('img/5.png') }}" alt="" class="header__logotype">
         </div>
         <div class="center-text after-h2">
             <p class="topp">Получите лучшие условия займа и увеличте % одобрения отправляя 4-5 заявок!</p>
@@ -139,7 +139,7 @@
                                     @if($model->sum)
                                         <div id="cr_p_new2">
                                             <strong>{{ $model->sum }}</strong>
-                                            грн.
+                                            руб.
                                         </div>
                                     @endif
 
@@ -579,7 +579,7 @@
         offerstakesum[o] = 100 * Math.round((1 * offerstakesum[o] + Math.floor(1e3 * Math.random())) / 100);
         var r = Math.floor(Math.random() * offerstaketype.length),
             n = Math.floor(Math.random() * offerstakecity.length),
-            s = offerstakename[e] + " " + offerstakesername[t] + ". (" + offerstakecity[n] + "), " + a + " займ " + offerstakesum[o] + " грн " + offerstaketype[r];
+            s = offerstakename[e] + " " + offerstakesername[t] + ". (" + offerstakecity[n] + "), " + a + " займ " + offerstakesum[o] + " руб " + offerstaketype[r];
         toastr.success(s)
     }
 
