@@ -335,9 +335,9 @@ JS;
                 ->inRandomOrder()
                 ->first();
 
-            $btnText = ($popup->btn_text && $popup->btn_text != '') ? $popup->btn_text : "Перейти";
-
             if ($popup) {
+                $btnText = ($popup->btn_text && $popup->btn_text != '') ? $popup->btn_text : "Перейти";
+
                 $html = <<<HTML
 <div class="ep-popup">
     <a class="ep-popup-content" href="{$popup->link}" target="_blank">
@@ -393,7 +393,7 @@ JS;
                 ->where(['place' => $place])
                 ->inRandomOrder()
                 ->first();
-            
+
             if ($popup) {
                 if ($popup->type == Popup::TYPE_HTML) {
                     return view('script/banner-html', ['popup' => $popup]);
