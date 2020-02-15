@@ -21,6 +21,7 @@ use TCG\Voyager\Traits\Translatable;
  * @property int $link_type
  * @property string|null $link
  * @property int $position
+ * @property int $published
  * @property string|null $deleted_at
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
@@ -42,6 +43,7 @@ use TCG\Voyager\Traits\Translatable;
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Bank whereTermFrom($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Bank whereTermTo($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Bank whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Bank wherePublished($value)
  * @mixin \Eloquent
  * @property string|null $link_to_site
  * @property string|null $data
@@ -110,6 +112,7 @@ class Bank extends Model
         'link_type',
         'link',
         'position',
+        'published',
     ];
 
     protected $dates = ['deleted_at'];
