@@ -210,7 +210,7 @@
                 </a>
             </div>
             <div class="footer__link">
-                <a href="{{ url('/page/privacy-policy-ru') }}" target="_blank">Политика конфиденциальности</a>
+                <a href="{{ url('/page/privacy-policy-kz') }}" target="_blank">Политика конфиденциальности</a>
             </div>
             <div class="copyright">&copy; credit-kz.cjiworld.com.</div>
         </div>
