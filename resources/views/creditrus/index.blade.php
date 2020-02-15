@@ -90,7 +90,7 @@
             <span class="inner-text">Займы от 0% на карту</span>
         </h2>
         <div class="header-logo-big">
-            <img src="{{ asset('img/5.png') }}" alt="" class="header__logotype">
+            <img src="{{ asset('img/rus.png') }}" alt="" class="header__logotype">
         </div>
         <div class="center-text after-h2">
             <p class="topp">Получите лучшие условия займа и увеличте % одобрения отправляя 4-5 заявок!</p>
