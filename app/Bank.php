@@ -67,6 +67,7 @@ class Bank extends Model
 
     const REGION_MAIN = 0;
     const REGION_RUS = 1;
+    const REGION_KZ = 2;
 
     const TYPE_LINK = 0;
 
@@ -78,6 +79,7 @@ class Bank extends Model
         return [
             self::REGION_MAIN => __('Main'),
             self::REGION_RUS => __('Rus'),
+            self::REGION_KZ => __('Kz'),
         ];
     }
 
