@@ -241,7 +241,6 @@
     </script>
 @endif
 
-<script src="//static-login.sendpulse.com/apps/fc3/build/loader.js" sp-form-id="e234babc40a090b9ecdbce4c68c59bd76f2a0c3809d51bd2a03e753201cf2f6c"></script>
 <script>!function (e, t, d, s, a, n, c) {
         e[a] = {}, e[a].date = (new Date).getTime(), n = t.createElement(d), c = t.getElementsByTagName(d)[0], n.type = "text/javascript", n.async = !0, n.src = s, c.parentNode.insertBefore(n, c)
     }(window, document, "script", "https://creditcijworldcom.push.world/https.embed.js", "pw"), pw.websiteId = "25b6db628b8da47c8c607b67c0d886812318b29b57187f556b8d201976370385";</script>
