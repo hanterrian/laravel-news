@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use TCG\Voyager\Models\Page;
 
-class CreatePagesTable extends Migration
+class CreatePagesTable2 extends Migration
 {
     /**
      * Run the migrations.
