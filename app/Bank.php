@@ -61,6 +61,7 @@ use TCG\Voyager\Traits\Translatable;
  * @method static \Illuminate\Database\Query\Builder|\App\Bank withoutTrashed()
  * @property string|null $mark
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Bank whereMark($value)
+ * @property-read int|null $translations_count
  */
 class Bank extends Model
 {

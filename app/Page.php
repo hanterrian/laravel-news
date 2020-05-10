@@ -43,6 +43,8 @@ use TCG\Voyager\Traits\Translatable;
  * @method static \Illuminate\Database\Eloquent\Builder|\TCG\Voyager\Models\Page withTranslations($locales = null, $fallback = true)
  * @mixin \Eloquent
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\PageBlock[] $blocks
+ * @property-read int|null $blocks_count
+ * @property-read int|null $translations_count
  */
 class Page extends Model
 {

@@ -39,6 +39,8 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
  * @method static \Illuminate\Database\Eloquent\Builder|\App\User whereAvatar($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\User whereRoleId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\User whereSettings($value)
+ * @property-read int|null $notifications_count
+ * @property-read int|null $roles_count
  */
 class User extends \TCG\Voyager\Models\User
 {

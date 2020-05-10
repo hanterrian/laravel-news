@@ -24,6 +24,7 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|\App\PopupSite whereName($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\PopupSite whereUpdatedAt($value)
  * @mixin \Eloquent
+ * @property-read int|null $popups_count
  */
 class PopupSite extends Model
 {
