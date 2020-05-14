@@ -241,9 +241,6 @@
     </script>
 @endif
 
-<script>!function (e, t, d, s, a, n, c) {
-        e[a] = {}, e[a].date = (new Date).getTime(), n = t.createElement(d), c = t.getElementsByTagName(d)[0], n.type = "text/javascript", n.async = !0, n.src = s, c.parentNode.insertBefore(n, c)
-    }(window, document, "script", "https://creditcijworldcom.push.world/https.embed.js", "pw"), pw.websiteId = "25b6db628b8da47c8c607b67c0d886812318b29b57187f556b8d201976370385";</script>
 <script>
     window.onload = function () {
         function slideDown(content) {
